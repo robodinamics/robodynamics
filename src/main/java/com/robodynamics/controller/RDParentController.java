@@ -14,10 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.robodynamics.model.RDAsset;
 import com.robodynamics.model.RDAssetCategory;
 import com.robodynamics.model.RDCourseCategory;
 import com.robodynamics.model.RDUser;
 import com.robodynamics.service.EmailService;
+import com.robodynamics.service.RDAssetService;
 import com.robodynamics.service.RDUserService;
 
 @Controller
@@ -27,6 +29,12 @@ public class RDParentController {
 	@Autowired
 	private RDUserService service;
 
+	
+	@Autowired
+	private RDAssetService assetService;
+
+	
+	
 	@Autowired
 	private EmailService emailService;
 
@@ -59,12 +67,16 @@ public class RDParentController {
 	
 	@GetMapping("/legos")
 	public ModelAndView showLegos( Model theModel, HttpSession session) {
-		RDUser parent = null;
+		
+        List < RDAsset> legoAssets = assetService.getRDAssetLegos();
+        theModel.addAttribute("legoAssets", legoAssets);
+        
+        RDUser parent = null;
 		if (session.getAttribute("rdUser") != null) {
 			parent = (RDUser) session.getAttribute("rdUser");
+			theModel.addAttribute("user", parent);
 		}
-		theModel.addAttribute("rdUser", parent);
-
+        
 		ModelAndView modelAndView = new ModelAndView("showLegos");
 		return modelAndView;
 	}

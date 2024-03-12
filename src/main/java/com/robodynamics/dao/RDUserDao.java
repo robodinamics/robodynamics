@@ -14,9 +14,12 @@ public interface RDUserDao {
 	
 	public List < RDUser > getRDUsers();
 	
+	public List < RDUser > getRDInstructors();
+	
     public void deleteRDUser(int id);
     
     public List < RDUser > getRDChilds(int parentUserId);
-    
+
+  
 
 }

@@ -26,8 +26,8 @@
 		<property name="suffix" value=".jsp" />
 		
 	</bean>
-	<mvc:annotation-driven/>
 	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:annotation-driven/>
 	
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:app-config.properties"/>
@@ -78,6 +78,7 @@
 				<value>com.robodynamics.model.RDCourseContent</value>
 				<value>com.robodynamics.model.RDCourseOffering</value>
 				<value>com.robodynamics.model.RDCourseResource</value>
+				<value>com.robodynamics.model.RDAssetTransaction</value>
 
 				
 			</list>

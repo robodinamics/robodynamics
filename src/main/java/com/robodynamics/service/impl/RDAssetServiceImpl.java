@@ -42,4 +42,10 @@ public class RDAssetServiceImpl implements RDAssetService {
 		
 	}
 
+	@Override
+	@Transactional
+	public List<RDAsset> getRDAssetLegos() {
+		return rdAssetDao.getRDAssetLegos();
+	}
+
 }

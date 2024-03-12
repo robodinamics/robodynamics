@@ -47,10 +47,6 @@ public class RDUserController {
 		return "login";
 	}
 
-	@GetMapping("/membership")
-	public String membership(Model m, HttpSession session) {
-		return "membership";
-	}
 	
 	@PostMapping("/login")
 	public String login(@ModelAttribute("rdUser") RDUser rdUser, Model model, HttpSession session) {

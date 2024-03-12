@@ -14,7 +14,10 @@ public interface RDUserService {
 	
 	public List < RDUser > getRDUsers();
 	
-    public void deleteRDUser(int id);
+	public List < RDUser > getRDInstructors();
+
+	
+	public void deleteRDUser(int id);
     
     public List < RDUser > getRDChilds(int parentUserId);
 

@@ -52,4 +52,13 @@ public class RDUserServiceImpl implements RDUserService {
 		return rdUserDao.getRDChilds(parentUserId);
 	}
 
+	@Override
+	@Transactional
+	public List<RDUser> getRDInstructors() {
+		return rdUserDao.getRDInstructors();
+
+	}
+	
+	
+
 }

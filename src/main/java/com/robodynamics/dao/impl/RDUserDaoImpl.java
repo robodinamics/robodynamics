@@ -69,6 +69,22 @@ public class RDUserDaoImpl implements RDUserDao {
         return query.getResultList();
 
 	}
+	
+	@Override
+	public List<RDUser> getRDInstructors() {
+		Session session = factory.getCurrentSession();
+		List<RDUser> rdChildsList = new ArrayList<RDUser>();
+		try {
+			Query<RDUser> query = session.createQuery("from RDUser user where user.profile_id in (1,2,3)",
+					RDUser.class);
+			rdChildsList = query.getResultList();
+			return rdChildsList;
+		} catch (NoResultException e) {
+			// TODO: handle exception
+			return null;
+		}
+
+	}
 
 	@Override
 	public void deleteRDUser(int id) {

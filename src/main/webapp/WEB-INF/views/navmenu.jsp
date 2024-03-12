@@ -41,7 +41,9 @@
 					<li class="nav-item"><a class="nav-link  active"
 						aria-current="page" href='<c:url value="/course/list"></c:url>'>Manage
 							Courses</a></li>
-
+										<li class="nav-item"><a class="nav-link  active"
+						aria-current="page" href='<c:url value="/courseoffering/list"></c:url>'>Manage
+							Course Offerings</a></li>
 				</ul>
 
 			</div>

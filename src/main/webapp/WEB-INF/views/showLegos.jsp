@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core"%>
+<%@ page isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
@@ -25,7 +26,8 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-success">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"> <img
-				src="resources/images/rdlogo.jpg" width="90" height="80" alt="">
+				src="${pageContext.request.contextPath}/resources/images/rdlogo.jpg"
+				width="90" height="80" alt="">
 			</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -97,33 +99,67 @@
 		</div>
 	</nav>
 	<br />
+<br/>
+<div class="container">
+  <div class="col-md-offset-1 col-md-10">
+   <h2>Build / Rent Legos</h2>
+   <hr />
+   
+    <br/><br/>
+    
+       <div class="panel panel-info">
+    <div class="panel-heading">
+     <div class="panel-title">Build / Rent Legos</div>
+    </div>
+    <div class="panel-body">
+     <table class="table table-striped table-bordered">
+      <tr>
+	       <th>Asset Name</th>
+	       <th>Asset Category</th>
+	       <th>Asset Resource Name</th>
+	       <th>Action</th>
+	  </tr>
+           <!-- loop over and print our asset categories -->
+      <c:forEach var="legoAsset" items="${legoAssets}">
 
-		<div class="container-fluid">
-		<div class="row flex-nowrap">
-			<div class="bg-dark col-auto col-md-2 min-vh-100">
-				<div class="bg-dark p-2">
-					<a
-						class="d-flex text-decoration-none mt-1 align-items-center text-white">
-						<span class="fs-4 d-none d-sm-inline"> Parents Menu </span>
-					</a>
-					<ul class="nav nav-pills flex-column mt-4">
-						<li class="nav-item"><a href="/legos" class="nav-link text-white">
-								<i class="fs-5 fa-guage"></i> <span
-								class="fs-4 d-none d-sm-inline"> Browse Legos</span>
+       <!-- construct an "build" link with customer id -->
+       <c:url var="bookLink" value="/assettransaction/bookForm">
+        <c:param name="assetId" value="${legoAsset.assetId}" />
+        <c:param name="userId" value="${user.userID}" />
+        <c:param name="transactionType" value="BUILD" />
+       </c:url>
 
-						</a></li>
-						<li class="nav-item"><a href="	/3dPens" class="nav-link text-white">
-								<i class="fs-5 fa-guage"></i> <span
-								class="fs-4 d-none d-sm-inline"> Browse 3D Pen Templates</span>
+       <!-- construct an "rent" link with customer id -->
+       <c:url var="rentLink" value="/assettransaction/bookForm">
+        <c:param name="assetId" value="${legoAsset.assetId}" />
+        <c:param name="userId" value="${user.userID}" />
+        <c:param name="transactionType" value="RENT" />
+        
+       </c:url>
 
-						</a></li>
-					</ul>
-				</div>
-			</div>
-			<h1>  Show Legos </h1>
-		</div>
+       <tr>
+        <td>${legoAsset.assetName}</td>
+        <td>${legoAsset.assetCategory.assetCategoryName}</td>
+		<td> <img alt="Image" src="<c:url value="/resources/images/${legoAsset.assetResources.iterator().next().assetResourceFileName}"/>"/>
+		 </td>        
+		 <td>
+        
+         <!-- display the update link --> <a href="${bookLink}">Build</a>
+         | <a href="${rentLink}">Rent</a>
+        </td>
 
-	</div>
+       </tr>
+
+      </c:forEach>
+
+     </table>
+
+    </div>
+   </div>
+  </div>
+
+ </div>
+
 </body>
 </html>
 

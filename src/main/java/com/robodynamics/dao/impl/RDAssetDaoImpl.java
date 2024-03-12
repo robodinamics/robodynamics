@@ -15,7 +15,7 @@ import javax.persistence.criteria.Root;
 
 import com.robodynamics.dao.RDAssetDao;
 import com.robodynamics.model.RDAsset;
-
+import com.robodynamics.model.RDUser;
 
 @Repository
 @Transactional
@@ -29,31 +29,46 @@ public class RDAssetDaoImpl implements RDAssetDao {
 		Session session = factory.getCurrentSession();
 		session.saveOrUpdate(rdAsset);
 	}
-	
+
 	public RDAsset getRDAsset(int assetId) {
-        Session session = factory.getCurrentSession();
-        RDAsset asset = session.get(RDAsset.class, assetId);
-        return asset;
+		Session session = factory.getCurrentSession();
+		RDAsset asset = session.get(RDAsset.class, assetId);
+		return asset;
 	}
-	
-    @Override
-    public List <RDAsset> getRDAssets() {
-        Session session = factory.getCurrentSession();
-        CriteriaBuilder cb = session.getCriteriaBuilder();
-        CriteriaQuery < RDAsset > cq = cb.createQuery(RDAsset.class);
-        Root < RDAsset > root = cq.from(RDAsset.class);
-        cq.select(root);
-        Query query = session.createQuery(cq);
-        return query.getResultList();
-    }
 
-    @Override
-    public void deleteRDAsset(int id) {
-        Session session = factory.getCurrentSession();
-        RDAsset asset = session.byId(RDAsset.class).load(id);
-        session.delete(asset);
-    }
+	@Override
+	public List<RDAsset> getRDAssets() {
+		Session session = factory.getCurrentSession();
+		CriteriaBuilder cb = session.getCriteriaBuilder();
+		CriteriaQuery<RDAsset> cq = cb.createQuery(RDAsset.class);
+		Root<RDAsset> root = cq.from(RDAsset.class);
+		cq.select(root);
+		Query query = session.createQuery(cq);
+		return query.getResultList();
+	}
 
+	@Override
+	public void deleteRDAsset(int id) {
+		Session session = factory.getCurrentSession();
+		RDAsset asset = session.byId(RDAsset.class).load(id);
+		session.delete(asset);
+	}
 
+	@Override
+	public List<RDAsset> getRDAssetLegos() {
+		Session session = factory.getCurrentSession();
+
+		try {
+			Query<RDAsset> query = session.createQuery(
+					"from RDAsset asset where asset.assetCategory.assetCategoryType = :assetCategoryType",
+					RDAsset.class);
+			query.setParameter("assetCategoryType", "Lego");
+			List<RDAsset> assetsList = query.list();
+			return assetsList;
+		} catch (NoResultException e) {
+			// TODO: handle exception
+			return null;
+		}
+	}
 
 }

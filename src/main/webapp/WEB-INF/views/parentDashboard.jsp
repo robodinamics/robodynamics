@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
+
+<%@ page isELIgnored="false" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,17 +107,27 @@
 				<div class="bg-dark p-2">
 					<a
 						class="d-flex text-decoration-none mt-1 align-items-center text-white">
-						<span class="fs-4 d-none d-sm-inline"> Parents Menu </span>
+						<span class="fs-4 d-none d-sm-inline"> Parents Dashboard </span>
 					</a>
 					<ul class="nav nav-pills flex-column mt-4">
 						<li class="nav-item"><a href="parent/legos" class="nav-link text-white">
 								<i class="fs-5 fa-guage"></i> <span
-								class="fs-4 d-none d-sm-inline"> Browse Legos</span>
+								class="fs-4 d-none d-sm-inline"> Build/Rent Legos</span>
 
 						</a></li>
 						<li class="nav-item"><a href="parent/3dPens" class="nav-link text-white">
 								<i class="fs-5 fa-guage"></i> <span
 								class="fs-4 d-none d-sm-inline"> Browse 3D Pen Templates</span>
+
+						</a></li>
+						<li class="nav-item"><a href="assettransaction/viewForm" class="nav-link text-white">
+								<i class="fs-5 fa-guage"></i> <span
+								class="fs-4 d-none d-sm-inline"> View History </span>
+
+						</a></li>
+						<li class="nav-item"><a href="courseoffering/showCalendar" class="nav-link text-white">
+								<i class="fs-5 fa-guage"></i> <span
+								class="fs-4 d-none d-sm-inline"> View Calendar </span>
 
 						</a></li>
 					</ul>
@@ -127,7 +140,7 @@
 
 </body>
 </html>
-
+<a href="${updateLink}">Update</a>
 
 
 

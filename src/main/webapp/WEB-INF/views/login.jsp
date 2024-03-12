@@ -23,7 +23,14 @@
 <title>Login</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+   <%@ include file="/WEB-INF/views/showHeader.jsp" %>
+   <!--  replace br with bootstrap paddings -->
+	<br>
+	<br>
+	
+	<br>
+	<br>
+<%-- 	<nav class="navbar navbar-expand-lg navbar-dark bg-success">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
 			<img src="resources/images/rdlogo.jpg"
@@ -50,41 +57,49 @@
 
 			</div>
 		</div>
-	</nav>
+	</nav> --%>
 	<div class="container mt-5">
-		<div class="card" style="width: 55rem;">
-			<div class="card-header text-center bg-light">Login</div>
-			<c:if test="${success != null}">
-				<div style="color: green; font-size: 20px;" role="alert">
-					<c:out value="${success}" />
-				</div>
-			</c:if>
-			<c:if test="${error != null}">
-				<div style="color: green; font-size: 20px;" role="alert">
-					<c:out value="${error}" />
-				</div>
-			</c:if>
-			<div class="card-body">
+		<div class="row">
+			<div class="col">
+				<img src="resources/images/rdlogo.jpg" class = "img-responsive" width = "100%">
+			</div>
+			<div class="col">
+				<div class="card" style="width: 55rem;">
+					<div class="card-header text-center bg-light">Login</div>
+					<c:if test="${success != null}">
+						<div style="color: green; font-size: 20px;" role="alert">
+							<c:out value="${success}" />
+						</div>
+					</c:if>
+					<c:if test="${error != null}">
+						<div style="color: green; font-size: 20px;" role="alert">
+							<c:out value="${error}" />
+						</div>
+					</c:if>
+					<div class="card-body">
 
-				<f:form action="login" modelAttribute="rdUser" method="post">
-					<div class="form-group">
-						<label for="exampleInputEmail1">UserName</label>
-						<f:input type="text" path="userName" class="form-control"
-							id="exampleInputEmail1" aria-describedby="emailHelp" />
-					</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<f:input type="password" path="password" class="form-control"
-							id="exampleInputPassword1" />
-					</div>
+						<f:form action="login" modelAttribute="rdUser" method="post">
+							<div class="form-group">
+								<label for="exampleInputEmail1">UserName</label>
+								<f:input type="text" path="userName" class="form-control"
+									id="exampleInputEmail1" aria-describedby="emailHelp" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<f:input type="password" path="password" class="form-control"
+									id="exampleInputPassword1" />
+							</div>
 
-					<br />
-					<center>
-						<button type="submit" class="btn btn-primary">Login</button>
-					</center>
-				</f:form>
+							<br />
+							<center>
+								<button type="submit" class="btn btn-primary">Login</button>
+							</center>
+						</f:form>
+					</div>
+				</div>
 			</div>
 		</div>
+
 	</div>
 </body>
 </html>

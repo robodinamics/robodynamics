@@ -1,6 +1,7 @@
 package com.robodynamics.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
@@ -26,45 +27,63 @@ public class RDCourseContent {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "content_id")
-	private int contentId;
+	@Column(name = "course_content_id")
+	private int courseContentId;
 	
-	@Column(name = "content_title")
-	private String contentTitle;
+	@Column(name = "course_content_title")
+	private String courseContentTitle;
 	
-	@Column(name = "content_data")
-	private String contentData;
+	@Column(name = "course_content_data")
+	private String courseContentData;
+	
+	@Column(name = "creation_date")
+	private Date creationDate;
+	
+	@Column(name = "version")
+	private int version;
 	
 	@ManyToOne
     @JoinColumn(name = "course_id")
     private RDCourse course;
-	
-	public RDCourseContent() {
-		
+
+	public int getCourseContentId() {
+		return courseContentId;
 	}
 
-	public int getContentId() {
-		return contentId;
+	public void setCourseContentId(int courseContentId) {
+		this.courseContentId = courseContentId;
 	}
 
-	public void setContentId(int contentId) {
-		this.contentId = contentId;
+	public String getCourseContentTitle() {
+		return courseContentTitle;
 	}
 
-	public String getContentTitle() {
-		return contentTitle;
+	public void setCourseContentTitle(String courseContentTitle) {
+		this.courseContentTitle = courseContentTitle;
 	}
 
-	public void setContentTitle(String contentTitle) {
-		this.contentTitle = contentTitle;
+	public String getCourseContentData() {
+		return courseContentData;
 	}
 
-	public String getContentData() {
-		return contentData;
+	public void setCourseContentData(String courseContentData) {
+		this.courseContentData = courseContentData;
 	}
 
-	public void setContentData(String contentData) {
-		this.contentData = contentData;
+	public Date getCreationDate() {
+		return creationDate;
+	}
+
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
+	}
+
+	public int getVersion() {
+		return version;
+	}
+
+	public void setVersion(int version) {
+		this.version = version;
 	}
 
 	public RDCourse getCourse() {
@@ -74,38 +93,7 @@ public class RDCourseContent {
 	public void setCourse(RDCourse course) {
 		this.course = course;
 	}
-
-	@Override
-	public String toString() {
-		return "RDCourseContent [contentId=" + contentId + ", contentTitle=" + contentTitle + ", contentData="
-				+ contentData + ", course=" + course + "]";
-	}
-
-	public RDCourseContent(int contentId, String contentTitle, String contentData, RDCourse course) {
-		super();
-		this.contentId = contentId;
-		this.contentTitle = contentTitle;
-		this.contentData = contentData;
-		this.course = course;
-	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(contentData, contentId, contentTitle, course);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		RDCourseContent other = (RDCourseContent) obj;
-		return Objects.equals(contentData, other.contentData) && contentId == other.contentId
-				&& Objects.equals(contentTitle, other.contentTitle) && Objects.equals(course, other.course);
-	}
+	
 	
 	
 }

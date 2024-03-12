@@ -21,28 +21,59 @@ import javax.persistence.Table;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+
 @Entity
 @Table(name = "rd_course_offerings")
+@JsonRootName("event")
 public class RDCourseOffering {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "course_offering_id")
+    @JsonProperty("id")
 	private int courseOfferingId;
 	
 	@Column(name = "start_date")
+	@JsonProperty("start")
+    @JsonFormat(pattern="yyyy-MM-dd")
 	private Date startDate;
 	
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	@Column(name = "title")
+    @JsonProperty("title")
+	private String title;
+	
 	@Column(name = "end_date")
+	@JsonProperty("end")
+    @JsonFormat(pattern="yyyy-MM-dd")
 	private Date endDate;
+	
+	@Column(name = "status")
+	@JsonIgnore
+	private String status;
 	
 	@ManyToOne
     @JoinColumn(name = "course_id")
+	@JsonIgnore
     private RDCourse course;
 	
 	
 	@ManyToOne
     @JoinColumn(name = "instructor_id")
+	@JsonIgnore
     private RDUser instructor;
 	
 	
@@ -99,44 +130,27 @@ public class RDCourseOffering {
 	public void setInstructor(RDUser instructor) {
 		this.instructor = instructor;
 	}
+	
+	
 
 
-	public RDCourseOffering(int courseOfferingId, Date startDate, Date endDate, RDCourse course, RDUser instructor) {
-		super();
-		this.courseOfferingId = courseOfferingId;
-		this.startDate = startDate;
-		this.endDate = endDate;
-		this.course = course;
-		this.instructor = instructor;
+	public String getStatus() {
+		return status;
+	}
+
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 
 	@Override
 	public String toString() {
 		return "RDCourseOffering [courseOfferingId=" + courseOfferingId + ", startDate=" + startDate + ", endDate="
-				+ endDate + ", course=" + course + ", instructor=" + instructor + "]";
+				+ endDate + ", status=" + status + ", course=" + course + ", instructor=" + instructor + "]";
 	}
 
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(course, courseOfferingId, endDate, instructor, startDate);
-	}
-
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		RDCourseOffering other = (RDCourseOffering) obj;
-		return Objects.equals(course, other.course) && courseOfferingId == other.courseOfferingId
-				&& Objects.equals(endDate, other.endDate) && Objects.equals(instructor, other.instructor)
-				&& Objects.equals(startDate, other.startDate);
-	}
-
+	
 	
 }

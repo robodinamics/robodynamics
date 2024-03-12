@@ -12,6 +12,9 @@ public interface RDAssetService {
 	
 	public List < RDAsset > getRDAssets();
 	
+	public List < RDAsset > getRDAssetLegos();
+	
+	
     public void deleteRDAsset(int id);
 
 }
