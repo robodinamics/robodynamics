@@ -54,7 +54,7 @@
 				<div class="carousel-item active">
 					<img src="resources/images/1.jpg" class="img-fluid" alt="first">
 					<div class="container">
-						<div class="carousel-caption text-start">
+						<div class="carousel-caption text-start ">
 
 							<h1>Welcome to Robo Dynamics: Igniting Innovation in Young Minds</h1>
 							<p>At Robo Dynamics, we believe in nurturing creativity, fostering innovation, and inspiring the next generation of inventors and technologists. Through our dynamic workshops and hands-on programs, we provide young minds with the tools, knowledge, and skills to thrive in today's digital age.</p>

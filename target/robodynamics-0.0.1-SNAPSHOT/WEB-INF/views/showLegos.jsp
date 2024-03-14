@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ page isELIgnored="false"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <head>
+<%@ page isELIgnored="false"%>
+
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,94 +20,28 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
 	integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
 	crossorigin="anonymous"></script>
-<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Welcome</title>
+
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#"> <img
-				src="${pageContext.request.contextPath}/resources/images/rdlogo.jpg"
-				width="90" height="80" alt="">
-			</a>
-			<button class="navbar-toggler" type="button"
-				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+	<%@ include file="/WEB-INF/views/showHeader.jsp"%>
+	<br>
+	<br>
+	<br>
+	<br>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Dashboard</a>
-					</li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Child's
-							Progress</a></li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Upcoming
-							Sessions</a></li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Booked
-							Appointments</a></li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Lego
-							Rentals</a></li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Communication
-							Center</a></li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Personal
-							Notifications</a></li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Profile
-							Settings</a></li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Resource
-							Library</a></li>
-				</ul>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/parent/profile"></c:url>'>Community
-							Forum</a></li>
-				</ul>
-			</div>
-			<ul class="navbar-nav ml-auto ">
-				<li class="nav-item"><a class="nav-link  active"
-					aria-current="page" href='<c:url value="/login"></c:url>'>Logout</a>
-				</li>
-
-			</ul>
+<div class="container-fluid">
+		<div class="row flex-nowrap">
+			<%@ include file="/WEB-INF/views/leftnav.jsp"%>
 
 
-		</div>
-	</nav>
-	<br />
-<br/>
-<div class="container">
   <div class="col-md-offset-1 col-md-10">
+  <br>
    <h2>Build / Rent Legos</h2>
    <hr />
    
-    <br/><br/>
-    
        <div class="panel panel-info">
     <div class="panel-heading">
      <div class="panel-title">Build / Rent Legos</div>
@@ -156,6 +91,7 @@
 
     </div>
    </div>
+  </div>
   </div>
 
  </div>

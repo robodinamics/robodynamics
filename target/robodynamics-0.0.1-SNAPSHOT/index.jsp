@@ -12,10 +12,8 @@
 <meta name="description" content="">
 <meta name="generator" content="Hugo 0.84.0">
 <title>Robo Dynamics</title>
-<!-- Bootstrap core CSS -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-	rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- Custom styles for this template -->
 <link href="resources/css/carousel.css" rel="stylesheet">
 <style>
@@ -40,39 +38,6 @@
 <body>
    <%@ include file="/WEB-INF/views/showHeader.jsp" %>
 
-<%-- 	<header>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#"> <img
-					src="resources/images/rdlogo.jpg" width="90" height="80" alt="">
-				</a>
-				<button class="navbar-toggler" type="button"
-					data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-					aria-controls="navbarCollapse" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="navbar-nav me-auto mb-2 mb-md-0">
-						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" href="#">Home</a></li>
-						<li class="nav-item"><a class="nav-link  active"
-						aria-current="page" href='<c:url value="/aboutus"></c:url>'>About US</a>
-						</li>
-						<!-- <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-						<li class="nav-item"><a class="nav-link disabled" href="#"
-							tabindex="-1" aria-disabled="true">Disabled</a></li> -->
-					</ul>
-					<form class="d-flex">
-						<input class="form-control me-2" type="search"
-							placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
-					</form>
-				</div>
-			</div>
-		</nav>
-	</header> --%>
-
 	<main>
 
 		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -91,9 +56,8 @@
 					<div class="container">
 						<div class="carousel-caption text-start">
 
-							<h1>Example headline.</h1>
-							<p>Some representative placeholder content for the first
-								slide of the carousel.</p>
+							<h1>Welcome to Robo Dynamics: Igniting Innovation in Young Minds</h1>
+							<p>At Robo Dynamics, we believe in nurturing creativity, fostering innovation, and inspiring the next generation of inventors and technologists. Through our dynamic workshops and hands-on programs, we provide young minds with the tools, knowledge, and skills to thrive in today's digital age.</p>
 							<p>
 								<a class="btn btn-lg btn-primary" href="#">Sign up today</a>
 							</p>
@@ -109,10 +73,12 @@
 
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Another example headline.</h1>
+							<h1>Why Choose Robo Dynamics?</h1>
 
-							<p>Some representative placeholder content for the second
-								slide of the carousel.</p>
+							<p>Experienced instructors passionate about STEM education
+Hands-on learning experiences tailored to different age groups
+Cutting-edge curriculum designed to spark curiosity and creativity
+Accessible membership plans catering to diverse interests and skill levels</p>
 							<p>
 								<a class="btn btn-lg btn-primary" href="#">Learn more</a>
 							</p>
@@ -124,9 +90,8 @@
 
 					<div class="container">
 						<div class="carousel-caption text-end">
-							<h1>One more for good measure.</h1>
-							<p>Some representative placeholder content for the third
-								slide of this carousel.</p>
+							<h1>Join Us Today and Unleash Your Potential!</h1>
+							<p>Ready to embark on a journey of discovery and innovation? Explore our membership plans and enroll in our workshops today to unlock a world of endless possibilities at Robo Dynamics.</p>
 							<p>
 								<a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
 							</p>
@@ -151,15 +116,20 @@
 		<!-- Wrap the rest of the page in another container to center all the content. -->
 
 		<div class="container marketing">
-
 			<!-- Three columns of text below the carousel -->
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4" >
 					<img src="resources/images/2.jpg" class="img-fluid" alt="first">
 
-					<h2>Heading</h2>
-					<p>Some representative placeholder content for the three
-						columns of text below the carousel. This is the first column.</p>
+					<h2>Young Innovators (Ages 5-8)</h2>
+					<ul>
+						<li> Engaging LEGO sets and smart model building </li>
+						<li> Introduction to beginner robotics and Scratch programming </li>
+						<li> Immersive VR education experiences </li>
+						<li> 3D Pen Workshops </li>
+					</ul>
+
+
 					<p>
 						<a class="btn btn-secondary" href="#">View details &raquo;</a>
 					</p>
@@ -168,21 +138,32 @@
 				<div class="col-lg-4">
 					<img src="resources/images/2.jpg" class="img-fluid" alt="first">
 
-					<h2>Heading</h2>
-					<p>Another exciting bit of representative placeholder content.
-						This time, we've moved on to the second column.</p>
-					<p>
+					<h2>Future Innovators (Ages 5-8)</h2>
+					<ul> 
+						<li> Arduino-based robotics workshops </li>
+						<li> Electronics fundamentals and C/C++ programming </li>
+						<li> Build your own drone workshops </li>
+						<li> Python programming and advanced robotics projects </li>
+						<li> Engaging LEGO sets and smart model building </li>
+						<li> Immersive VR education experiences  </li>
+						<li> 3D Printing Workshops  </li>
+						
+					</ul>
+				<p>
 						<a class="btn btn-secondary" href="#">View details &raquo;</a>
 					</p>
 				</div>
 				<!-- /.col-lg-4 -->
-				<div class="col-lg-4">
+				<div class="col-lg-4" >
 					<img src="resources/images/2.jpg" class="img-fluid" alt="first">
 
-					<h2>Heading</h2>
-					<p>And lastly this, the third column of representative
-						placeholder content.</p>
-					<p>
+					<h2>Programmers Hub (Ages - 12 to 20)</h2>
+					<ul> 
+						<li> Comprehensive coding courses in C, C++, Java, and Python </li>
+						<li> Website development using HTML, CSS, JavaScript, and Bootstrap </li>
+						<li> Graphics design with Canva and other tools </li>
+						<li> Mastering RDBMS with SQL </li>
+					</ul>
 						<a class="btn btn-secondary" href="#">View details &raquo;</a>
 					</p>
 				</div>
@@ -254,22 +235,8 @@
 		<!-- /.container -->
 
 
-		<!-- FOOTER -->
-		<footer class="container">
-			<p class="float-end">
-				<a href="#">Back to top</a>
-			</p>
-			<p>
-				&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a>
-				&middot; <a href="#">Terms</a>
-			</p>
-		</footer>
+   <%@ include file="/WEB-INF/views/footer.jsp" %>
+
 	</main>
-
-
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 </html>

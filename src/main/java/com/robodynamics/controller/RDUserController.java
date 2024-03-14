@@ -30,7 +30,7 @@ public class RDUserController {
 	public String register(@ModelAttribute("rdUser") RDUser rdUser, Model model) {
 		service.registerRDUser(rdUser);
 		model.addAttribute("success", "Registered Successfully");
-		return "register";
+		return "login";
 	}
 
 	@GetMapping("/login")

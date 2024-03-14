@@ -16,10 +16,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.robodynamics.model.RDAsset;
 import com.robodynamics.model.RDAssetCategory;
+import com.robodynamics.model.RDAssetTransaction;
 import com.robodynamics.model.RDCourseCategory;
 import com.robodynamics.model.RDUser;
 import com.robodynamics.service.EmailService;
 import com.robodynamics.service.RDAssetService;
+import com.robodynamics.service.RDAssetTransactionService;
 import com.robodynamics.service.RDUserService;
 
 @Controller
@@ -32,6 +34,9 @@ public class RDParentController {
 	
 	@Autowired
 	private RDAssetService assetService;
+	
+	@Autowired
+	private RDAssetTransactionService assetTransactionService;
 
 	
 	
@@ -43,13 +48,13 @@ public class RDParentController {
 	 */
 
 	@GetMapping("/register")
-	public ModelAndView home1(Model m,@RequestParam("type") String type) {
+	public ModelAndView home1(Model m, HttpSession session) {
 		RDUser rdUser = new RDUser();
 		m.addAttribute("rdUser", rdUser);
 		ModelAndView modelAndView = new ModelAndView("registerParentPageOne");
 		return modelAndView;
 	}
-
+    
 	@GetMapping("/profile")
 	public ModelAndView showProfile( Model theModel, HttpSession session) {
 		RDUser parent = null;
