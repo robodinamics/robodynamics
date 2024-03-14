@@ -44,7 +44,7 @@
 	<div class="bg-warning col-auto col-md-2 min-vh-100">
 		<div class="bg-warning p-2">
 
-			<aMan
+			<a
 				class="d-flex text-decoration-none mt-1 align-items-center text-white">
 				<span class="fs-4 d-none d-sm-inline"> Mentor Dashboard </span>
 			</a>

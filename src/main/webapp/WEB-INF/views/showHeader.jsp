@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <%@ page isELIgnored="false"%>
 
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-	rel="stylesheet">
 </head>
 <body>
 <c:set var="user" value="${sessionScope.rdUser}" />
@@ -38,6 +35,7 @@
 						<li class="nav-item"><a class="nav-link disabled" href="#"
 							tabindex="-1" aria-disabled="true">Disabled</a></li> -->
 					</ul>
+
 
 					<c:choose>
 					    <c:when test="${empty user}">
