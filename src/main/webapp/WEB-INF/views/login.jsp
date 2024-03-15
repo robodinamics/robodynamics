@@ -43,11 +43,7 @@
 					</c:if>
 				<div class="card" style="width: 55rem;">
 					<div class="card-header text-center bg-light">Login</div>
-					<c:if test="${success != null}">
-						<div style="color: green; font-size: 20px;" role="alert">
-							<c:out value="${success}" />
-						</div>
-					</c:if>
+
 					<c:if test="${error != null}">
 						<div style="color: green; font-size: 20px;" role="alert">
 							<c:out value="${error}" />

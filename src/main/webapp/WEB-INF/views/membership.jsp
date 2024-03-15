@@ -20,47 +20,70 @@
 	<br>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Pricing</h1>
-      <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+      <h1 class="display-4">Summer Camp Pricing</h1>
+      <p class="lead">Pricing for 4 days a week 3hrs a day</p>
     </div>
 
-    <div class="container">
-    
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Young Innovators</h4>
+
+
+ <div class="row row-cols-1 row-cols-md-3 mb-3 text-center m-5">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Young Innovators</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Rs. 2500 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Access to Unlimited LEGO Building Sets</li>
+            <h1 class="card-title pricing-card-title">Rs.6500<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list mt-3 mb-4 text-start">
+             <li>Access to Unlimited LEGO Building Sets</li>
               <li>Access to Robotics Projects</li>
               <li>Weekly Scratch Programming classes</li>
               <li>Monthly Drone Building Workshops</li>
               <li>Access to VR Educational Apps/Games</li>
             </ul>
+            
   	        <a href="parent/register?type=young" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Subscribe</a>
           </div>
         </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Future Innovators</h4>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Future Innovators</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Rs. 6500 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Full Access to all sessions for Robotics, Drones, LEGO and Python Programming</li>
+            <h1 class="card-title pricing-card-title">Rs.8500<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list mt-3 mb-4 text-start">
+            <li>Full Access to all sessions for Robotics, Drones, LEGO and Python Programming</li>
               <li>Unlimited Access to 3D Pen and 3D Printing Sessions</li>
               <li>Monthly Coding Bootcamps</li>
               <li>Participation in advanced robotics competitions</li>
               <li>Specialized project mentoring to personal projects</li>
               <li>Exclusive invites to industry experts talks and field trips</li>
-            </ul>
-  	        <a href="parent/register?type=tech" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Subscribe</a>
+            </ul> 
+  	        <a href="parent/register?type=young" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Subscribe</a>
           </div>
         </div>
       </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Programmers Hub</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Rs.8500<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list mt-3 mb-4 text-start">
+            <li>Learn C, C++, Java, Python</li>
+            <li>Learn C, C++, Java, Python</li>
+            <li>Learn C, C++, Java, Python</li>
+            <li>Learn C, C++, Java, Python</li>
+            <li>Learn C, C++, Java, Python</li>
+            </ul> 
+  	        <a href="parent/register?type=young" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
    <%@ include file="/WEB-INF/views/footer.jsp" %>
 

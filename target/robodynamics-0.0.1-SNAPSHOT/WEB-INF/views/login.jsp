@@ -36,6 +36,11 @@
 				<img src="resources/images/rdlogo.jpg" class = "img-responsive" width = "100%">
 			</div>
 			<div class="col">
+					<c:if test="${success != null}">
+						<div style="color: green; font-size: 20px;" role="alert">
+							<c:out value="${success}" />
+						</div>
+					</c:if>
 				<div class="card" style="width: 55rem;">
 					<div class="card-header text-center bg-light">Login</div>
 					<c:if test="${success != null}">

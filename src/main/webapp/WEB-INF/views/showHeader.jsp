@@ -10,11 +10,11 @@
 	<c:set var="user" value="${sessionScope.rdUser}" />
 
 	<header>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-			<div class="container-fluid">
+		<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white" >
+			<div class="container-fluid d-flex">
 				<a class="navbar-brand" href="#"> <img
-					src="${pageContext.request.contextPath}/resources/images/rdlogo.jpg"
-					width="90" height="80" alt="">
+					src="${pageContext.request.contextPath}/resources/images/rdlogotransparent.png"
+					width="auto" height="60px" alt="">
 				</a>
 				<button class="navbar-toggler" type="button"
 					data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -23,13 +23,12 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="navbar-nav me-auto mb-2 mb-md-0">
-						<li class="nav-item"><a class="nav-link active"
+					<ul class="navbar-nav me-auto mb-2 mb-md-0 fs-5">
+						<li class="nav-item px-3"><a class="nav-link active"
 							aria-current="page" href="${pageContext.request.contextPath}">Home</a></li>
-						<li class="nav-item"><a class="nav-link  active"
-							aria-current="page" href='<c:url value="/aboutus"></c:url>'>About
-								US</a></li>
-						<li class="nav-item"><a class="nav-link  active"
+						<li class="nav-item px-3"><a class="nav-link  active"
+							aria-current="page" href='<c:url value="/aboutus"></c:url>'>About Us</a></li>
+						<li class="nav-item px-3"><a class="nav-link  active"
 							aria-current="page" href='<c:url value="/membership"></c:url>'>Membership</a>
 						</li>
 						<!-- <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
