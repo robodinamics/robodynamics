@@ -83,9 +83,13 @@ public class RDAssetController {
 
         if(imageFile != null || !imageFile.isEmpty()) {
         	System.out.println("hello............");
-        	String fileName = servletContext.getRealPath("/") + "resources\\images\\" + imageFile.getOriginalFilename();
+        	String filePath 
+            = servletContext.getRealPath("/") 
+              + "resources"
+              + File.separator + "images" + File.separator 
+              + imageFile.getOriginalFilename(); 
         	try {
-        		imageFile.transferTo(new File(fileName));
+        		imageFile.transferTo(new File(filePath));
 			} catch (IllegalStateException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -93,7 +97,7 @@ public class RDAssetController {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-        	System.out.println(fileName);
+        	System.out.println(filePath);
         	RDAssetResource assetResource = new RDAssetResource();
         	assetResource.setAssetResourceFileName(imageFile.getOriginalFilename());
         	assetResource.setAssetResourceType("image");

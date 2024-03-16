@@ -73,7 +73,7 @@
 								<tr>
 									<td>${tempAsset.assetName}</td>
 									<td>${tempAsset.assetCategory.assetCategoryName}</td>
-									<td><img alt="Image"
+									<td><img alt="Image" class="img-responsive" width="307" height="240"
 										src="<c:url value="/resources/images/${tempAsset.assetResources.iterator().next().assetResourceFileName}"/>" />
 									</td>
 									<td>

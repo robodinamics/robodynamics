@@ -20,46 +20,201 @@
 	crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js" integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous"></script>
 <meta charset="ISO-8859-1">
+
+<style>
+.wrapper{
+    background: #ececec;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.side-image{
+    background-image: url("images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+.row{
+  width:  900px;
+  height:550px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0px;
+  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color: #fff;
+    font-size: 20px; 
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input-box{
+  width: 330px;
+  box-sizing: border-box;
+}
+.sign img{
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field input:focus ~ label
+   {
+    top: -10px;
+    font-size: 13px;
+  }
+  .input-field input:valid ~ label
+  {
+   top: -10px;
+   font-size: 13px;
+   color: #5d5076;
+ }
+ .input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+ }
+ .submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+ }
+ .submit:hover{
+    background: rgba(37, 95, 156, 0.937);
+    color: #fff;
+ }
+ .signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+.bg-custom {
+background: rgb(132,156,235);
+background: radial-gradient(circle, rgba(132,156,235,1) 0%, rgba(0,76,146,0.6383345574557948) 53%, rgba(0,212,255,1) 100%);
+}
+
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    .sign img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p, i{
+        font-size: 16px;
+    }
+    .row{
+        max-width:420px;
+        width: 100%;
+    }
+}
+
+</style>
+
 <title>Login</title>
 </head>
 <body>
    <%@ include file="/WEB-INF/views/showHeader.jsp" %>
-   <!--  replace br with bootstrap paddings -->
-	<br>
-	<br>
 	
-	<br>
-	<br>
-	<div class="container mt-5">
-		<div class="row">
-			<div class="col">
-				<img src="resources/images/rdlogo.jpg" class = "img-responsive" width = "100%">
-			</div>
-			<div class="col">
-					<c:if test="${success != null}">
-						<div style="color: green; font-size: 20px;" role="alert">
-							<c:out value="${success}" />
-						</div>
-					</c:if>
-				<div class="card" style="width: 55rem;">
-					<div class="card-header text-center bg-light">Login</div>
-
-					<c:if test="${error != null}">
-						<div style="color: green; font-size: 20px;" role="alert">
-							<c:out value="${error}" />
-						</div>
-					</c:if>
-					<div class="card-body">
-
-						<f:form action="login" modelAttribute="rdUser" method="post">
-							<div class="form-group">
+	<div class="wrapper">
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-6 side-image bg-custom">
+                       
+                <img src="${pageContext.request.contextPath}/resources/images/rdlogotransparent.png" width="auto" height="60px" alt="" class="my-3">
+                
+                <div class="text text-dark">
+                    <p>Experienced instructors passionate about STEM education <i>- RoboDynamics</i></p>
+                </div>
+                
+            </div>
+            <div class="col-md-6 right">
+                
+                <div class="input-box">
+                   
+                   <header>Sign Up As Parent</header>
+                <c:if test="${success != null}">
+				<div style="color: green; font-size: 20px;" role="alert">
+					<c:out value="${success}" />
+				</div>
+				</c:if>
+				<f:form action="login" modelAttribute="rdUser" method="post">
+							<div class="form-group input-field">
 								<label for="exampleInputEmail1">UserName</label>
-								<f:input type="text" path="userName" class="form-control"
+								<f:input type="text" path="userName" class="form-control input"
 									id="exampleInputEmail1" aria-describedby="emailHelp" />
 							</div>
-							<div class="form-group">
+							<div class="form-group input-field">
 								<label for="exampleInputPassword1">Password</label>
-								<f:input type="password" path="password" class="form-control"
+								<f:input type="password" path="password" class="form-control input"
 									id="exampleInputPassword1" />
 							</div>
 
@@ -68,12 +223,14 @@
 								<button type="submit" class="btn btn-primary">Login</button>
 							</center>
 						</f:form>
-					</div>
-				</div>
-			</div>
-		</div>
+            </div>
+        </div>
+    </div>
+</div>
    <%@ include file="/WEB-INF/views/footer.jsp" %>
 
 	</div>
 </body>
 </html>
+
+
