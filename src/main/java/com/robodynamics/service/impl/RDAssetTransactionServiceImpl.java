@@ -34,6 +34,11 @@ public class RDAssetTransactionServiceImpl implements RDAssetTransactionService 
 	public List<RDAssetTransaction> getRDAssetTransactions() {
 		return rdAssetTransactionDao.getRDAssetTransactions();
 	}
+	
+	@Override
+	public List<RDAssetTransaction> getRDAssetTransactions(int userId) {
+		return rdAssetTransactionDao.getRDAssetTransactions(userId);
+	}	
 
 	@Override
 	public void deleteRDAssetTransaction(int id) {

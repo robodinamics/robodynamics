@@ -32,28 +32,30 @@
 	<br>
 	<br>
 
-	<div class="container-fluid">
+<div class="container-fluid">
 		<div class="row flex-nowrap">
 			<%@ include file="/WEB-INF/views/leftnav.jsp"%>
-			<h2>View Transaction History</h2>
-			<hr />
 
 
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<div class="panel-title">View Transaction History</div>
-				</div>
-				<div class="panel-body">
-					<table class="table table-striped table-bordered">
-						<tr>
-							<th>Asset Name</th>
-							<th>Asset </th>
-							<th>Transaction Start Date</th>
-							<th>Status</th>
-							<th>Transaction End Date</th>
-						</tr>
-						<!-- loop over and print our asset categories -->
-						<c:forEach var="tempAssetTransaction" items="${assetTransactionsList}">
+  <div class="col-md-offset-1 col-md-10">
+  <br>
+   <h2>View History</h2>
+   <hr />
+   
+       <div class="panel panel-info">
+    <div class="panel-heading">
+     <div class="panel-title">View History</div>
+    </div>
+    <div class="panel-body">
+     <table class="table table-striped table-bordered">
+	 <tr>
+			<th>Asset Name</th>
+			<th>Asset </th>
+			<th>Transaction Start Date</th>
+			<th>Status</th>
+			<th>Transaction End Date</th>
+		</tr>
+          	<c:forEach var="tempAssetTransaction" items="${assetTransactionsList}">
 
 							<!-- construct an "update" link with customer id -->
 							<c:url var="updateLink" value="/asset/updateForm">
@@ -76,12 +78,14 @@
 							</tr>
 
 						</c:forEach>
+     </table>
 
-					</table>
-				</div>
-				</div>
-			</div>
-		</div>
+    </div>
+   </div>
+  </div>
+  </div>
+
+ </div>
 
 </body>
 </html>

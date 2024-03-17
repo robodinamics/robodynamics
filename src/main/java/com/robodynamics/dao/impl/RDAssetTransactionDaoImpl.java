@@ -1,5 +1,6 @@
 package com.robodynamics.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.SessionFactory;
@@ -57,6 +58,25 @@ public class RDAssetTransactionDaoImpl implements RDAssetTransactionDao {
 		Query query = session.createQuery(cq);
 		return query.getResultList();
 	}
+	
+	@Override
+	public List<RDAssetTransaction> getRDAssetTransactions(int userId) {
+		
+		Session session = factory.getCurrentSession();
+		List<RDAssetTransaction> assetTransactionList = new ArrayList<RDAssetTransaction>();
+		try {
+			Query<RDAssetTransaction> query = session.createQuery("from RDAssetTransaction assetTransaction where assetTransaction.user.userID =:userId",
+					RDAssetTransaction.class);
+			
+			query.setParameter("userId", userId);
+			assetTransactionList = query.getResultList();
+			return assetTransactionList;
+		} catch (NoResultException e) {
+			// TODO: handle exception
+			return null;
+		}
+	}
+	
 
 	@Override
 	public void deleteRDAssetTransaction(int id) {

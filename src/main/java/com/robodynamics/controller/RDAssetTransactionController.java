@@ -58,13 +58,24 @@ public class RDAssetTransactionController {
 	private RDAssetTransactionService assetTransactionService;
 
 
-    @GetMapping("/viewForm")
-    public ModelAndView viewHistory(Model theModel) {
-    	List<RDAssetTransaction> assetTransactionsList 
-    	= assetTransactionService.getRDAssetTransactions();
-        theModel.addAttribute("assetTransactionsList", assetTransactionsList);
+    @GetMapping("/viewHistory")
+    public ModelAndView viewHistory(Model theModel, HttpSession session) {
+    	
+        RDUser parent = null;
         
-		
+        System.out.println("hello 111");
+		if (session.getAttribute("rdUser") != null) {
+			parent = (RDUser) session.getAttribute("rdUser");
+	
+
+    	List<RDAssetTransaction> assetTransactionsList 
+    	= assetTransactionService.getRDAssetTransactions(parent.getUserID());
+        System.out.println("hello 111 " + assetTransactionsList.size());
+
+        theModel.addAttribute("assetTransactionsList", assetTransactionsList);
+		}
+        System.out.println("hello 111");
+
 		ModelAndView modelAndView = new ModelAndView("view-asset-transaction-form");
 		return modelAndView;
     }
@@ -121,8 +132,14 @@ public class RDAssetTransactionController {
     	user.setUserID(assetTransactionForm.getUserID());
     	
     	try {
-			theAssetTransaction.setTransactionDate(new SimpleDateFormat("yyyy-mm-dd").parse(assetTransactionForm.getTransactionStartDate()));
-			theAssetTransaction.setTransactionStartDate(theAssetTransaction.getTransactionDate());
+    		SimpleDateFormat curFormater = new SimpleDateFormat("yyyy-MM-dd",Locale.US); 
+    		Date dateObj = curFormater.parse(assetTransactionForm.getTransactionStartDate());
+    		
+    		System.out.println("Transaction Start date : " + assetTransactionForm.getTransactionStartDate());
+    		
+			theAssetTransaction.setTransactionDate(dateObj);
+   		
+			theAssetTransaction.setTransactionStartDate(dateObj);
     	} catch (ParseException e) {
 			
 			e.printStackTrace();

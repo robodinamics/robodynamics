@@ -8,12 +8,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.robodynamics.dao.RDAssetDao;
 import com.robodynamics.dao.RDAssetTransactionDao;
+import com.robodynamics.dao.RDCourseOfferingDao;
 import com.robodynamics.model.RDAsset;
 import com.robodynamics.model.RDAssetTransaction;
 import com.robodynamics.model.RDCourseOffering;
 import com.robodynamics.service.RDAssetService;
 import com.robodynamics.service.RDAssetTransactionService;
-import com.robodynamics.service.RDCourseOfferingDao;
 import com.robodynamics.service.RDCourseOfferingService;
 
 @Service

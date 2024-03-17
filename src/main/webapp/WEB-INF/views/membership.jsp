@@ -2,6 +2,8 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
+
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +17,7 @@
     
    main {
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    height: 85vh;
+    height: 100vh;
    }
     </style>
 </head>
@@ -113,8 +115,6 @@
 
     
    <%@ include file="/WEB-INF/views/footer.jsp" %>
-
-    </div>
 
 </body>
 </html>

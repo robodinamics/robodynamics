@@ -13,6 +13,8 @@ public interface RDAssetTransactionService {
 	
 	public List < RDAssetTransaction > getRDAssetTransactions();
 	
+	public List < RDAssetTransaction > getRDAssetTransactions(int userId);
+	
     public void deleteRDAssetTransaction(int id);
 
 }

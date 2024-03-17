@@ -12,6 +12,8 @@ public interface RDAssetTransactionDao {
 	
     public void deleteRDAssetTransaction(int id);
 
-	List<RDAssetTransaction> getRDAssetTransactions();
+	public List<RDAssetTransaction> getRDAssetTransactions();
+	
+	public List<RDAssetTransaction> getRDAssetTransactions(int userId);
 
 }

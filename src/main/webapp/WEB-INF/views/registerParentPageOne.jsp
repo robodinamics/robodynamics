@@ -185,9 +185,6 @@ background: radial-gradient(circle, rgba(132,156,235,1) 0%, rgba(0,76,146,0.6383
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/showHeader.jsp"%>
-	
-	
-	
 	<div class="wrapper">
     <div class="container main">
         <div class="row">
@@ -242,56 +239,5 @@ background: radial-gradient(circle, rgba(132,156,235,1) 0%, rgba(0,76,146,0.6383
         </div>
     </div>
 </div>
-	
-	
-	
-	<%-- 
-	<div class="container-fluid">
-		<div class="row flex-nowrap">
-			<%@ include file="/WEB-INF/views/leftnav.jsp"%>
-
-
-	<div class="container mt-5">
-		<div class="card" style="width: 55rem;">
-			<div class="card-header text-center bg-light">Signup As Parent</div>
-			<c:if test="${success != null}">
-				<div style="color: green; font-size: 20px;" role="alert">
-					<c:out value="${success}" />
-				</div>
-			</c:if>
-			<div class="card-body">
-				<f:form action="registerParentPageOne" modelAttribute="rdUser" method="post">
-					<div class="form-group">
-						<label for="exampleInputEmail1">Email</label>
-						<f:input type="text" path="email" class="form-control"
-							id="exampleInputEmail1" aria-describedby="emailHelp" />
-					</div>
-					
-					<div class="form-group">
-						<label for="exampleInputEmail1">Cell Phone</label>
-						<f:input type="text" path="cellPhone" class="form-control"
-							id="exampleInputEmail1" aria-describedby="emailHelp" />
-					</div>
-					
-					<div class="form-group">
-						<label for="exampleInputEmail1">First Name</label>
-						<f:input type="text" path="firstName" class="form-control"
-							id="exampleInputEmail1" aria-describedby="emailHelp" />
-					</div>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Last Name</label>
-						<f:input type="text" path="lastName" class="form-control"
-							id="exampleInputEmail1" aria-describedby="emailHelp" />
-					</div>
-					<br>
-					<center>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</center>
-				</f:form>
-			</div>
-		</div>
-		</div>
-		</div>
-	</div> --%>
 </body>
 </html>

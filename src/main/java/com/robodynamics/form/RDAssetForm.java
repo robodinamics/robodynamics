@@ -7,6 +7,8 @@ public class RDAssetForm {
 	private int assetId;
 	private String assetName;
 	private int assetCategoryId;
+	private int assetQuantity;
+	
     private MultipartFile imageFile;
     
     
@@ -34,9 +36,24 @@ public class RDAssetForm {
 	public void setImageFile(MultipartFile imageFile) {
 		this.imageFile = imageFile;
 	}
+	
+	
 
-    public RDAssetForm() {
+    public int getAssetQuantity() {
+		return assetQuantity;
+	}
+	public void setAssetQuantity(int assetQuantity) {
+		this.assetQuantity = assetQuantity;
+	}
+	public RDAssetForm() {
     	
     }
+	@Override
+	public String toString() {
+		return "RDAssetForm [assetId=" + assetId + ", assetName=" + assetName + ", assetCategoryId=" + assetCategoryId
+				+ ", assetQuantity=" + assetQuantity + ", imageFile=" + imageFile + "]";
+	}
+	
+	
 	
 }

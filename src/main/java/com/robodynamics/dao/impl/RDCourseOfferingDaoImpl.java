@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.robodynamics.dao.RDAssetTransactionDao;
+import com.robodynamics.dao.RDCourseOfferingDao;
+
 import javax.persistence.NoResultException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -24,7 +26,6 @@ import javax.persistence.criteria.Root;
 import com.robodynamics.dao.RDAssetDao;
 import com.robodynamics.model.RDAsset;
 import com.robodynamics.model.RDUser;
-import com.robodynamics.service.RDCourseOfferingDao;
 import com.robodynamics.model.RDAssetTransaction;
 import com.robodynamics.model.RDCourseOffering;
 

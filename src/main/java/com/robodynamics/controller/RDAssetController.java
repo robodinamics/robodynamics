@@ -67,13 +67,23 @@ public class RDAssetController {
         if(result.hasErrors()) {
         	return "showForm";
         }
-		
+        MultipartFile imageFile = assetForm.getImageFile();
+
+        System.out.println("asset id : " + assetForm.getAssetId());
+
         System.out.println("asset name : " + assetForm.getAssetName());
         System.out.println("asset category id : " + assetForm.getAssetCategoryId());
-        
-        MultipartFile imageFile = assetForm.getImageFile();
-    	RDAsset theAsset = new RDAsset();
+        RDAsset theAsset = null;
+      
+        if(assetForm.getAssetId() != 0) {
+    	  theAsset = service.getRDAsset(assetForm.getAssetId());
+    	  imageFile = null;
+      } else {
+    	theAsset = new RDAsset();
+      }
+    	
     	theAsset.setAssetName(assetForm.getAssetName());
+    	theAsset.setAssetQuantity(assetForm.getAssetQuantity());
     	RDAssetCategory assetCategory = new RDAssetCategory();
     	assetCategory.setAssetCategoryId(assetForm.getAssetCategoryId());
     	
@@ -81,7 +91,8 @@ public class RDAssetController {
 		service.saveRDAsset(theAsset);
 		System.out.println("Asset id :" + 	theAsset.getAssetId());
 
-        if(imageFile != null || !imageFile.isEmpty()) {
+        
+		if(imageFile != null || !imageFile.isEmpty()) {
         	System.out.println("hello............");
         	String filePath 
             = servletContext.getRealPath("/") 
@@ -120,11 +131,11 @@ public class RDAssetController {
         assetForm.setAssetId(theId);
         assetForm.setAssetName(asset.getAssetName());
         assetForm.setAssetCategoryId(asset.getAssetCategory().getAssetCategoryId());
-        
         List < RDAssetCategory > assetCategories = assetCategoryService.getRDAssetCategories();
 		theModel.addAttribute("assetCategories", assetCategories);
 
-
+		System.out.println("asset form - " + assetForm);
+		
         theModel.addAttribute("assetForm", assetForm);
 		
 		ModelAndView modelAndView = new ModelAndView("asset-form");

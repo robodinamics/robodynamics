@@ -37,6 +37,9 @@ public class RDAsset {
 	@Column(name = "availability_status")
 	private String availabilityStatus;
 	
+	@Column(name = "asset_quantity")
+	private int assetQuantity;
+	
 	
 	@ManyToOne
     @JoinColumn(name = "asset_category_id")
@@ -92,6 +95,15 @@ public class RDAsset {
 	public void setAssetResources(Set<RDAssetResource> assetResources) {
 		this.assetResources = assetResources;
 	}
+
+	public int getAssetQuantity() {
+		return assetQuantity;
+	}
+
+	public void setAssetQuantity(int assetQuantity) {
+		this.assetQuantity = assetQuantity;
+	}
+	
 	
 
 }
