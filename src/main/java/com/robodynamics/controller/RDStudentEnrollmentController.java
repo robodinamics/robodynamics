@@ -41,156 +41,196 @@ import com.robodynamics.service.RDStudentEnrollmentService;
 import com.robodynamics.service.RDUserService;
 
 @Controller
-@RequestMapping("/studentenrollment")
+@RequestMapping("/enrollment")
 public class RDStudentEnrollmentController {
-	
-	
+
 	@Autowired
 	ServletContext servletContext;
-	
 
 	@Autowired
 	private RDCourseService courseService;
-	
+
 	@Autowired
 	private RDUserService userService;
-	
+
 	@Autowired
 	private RDCourseOfferingService courseOfferingService;
 
 	@Autowired
 	private RDStudentEnrollmentService studentEnrollmentService;
-	
+
 	@GetMapping("/enroll")
-    public String listCourseOfferings(Model theModel) {
-        List < RDCourseOffering > courseOfferings = courseOfferingService.getRDCourseOfferings();
-        System.out.println(courseOfferings);
-        theModel.addAttribute("courseOfferings", courseOfferings);
-        return "listCourseOfferings";
-    }
+	public String listCourseOfferings(Model theModel) {
+		List<RDCourseOffering> courseOfferings = courseOfferingService.getRDCourseOfferings();
+		System.out.println(courseOfferings);
+		theModel.addAttribute("courseOfferings", courseOfferings);
+		return "listCourseOfferings";
+	}
 
 	@GetMapping("/list")
-    public String listRDStudentEnrollments(Model theModel) {
-        List < RDStudentEnrollment > studentEnrollments = studentEnrollmentService.getRDStudentEnrollments();
-        System.out.println(studentEnrollments);
-        theModel.addAttribute("studentEnrollments", studentEnrollments);
-        return "listStudentEnrollments";
-    }
-	
+	public String listRDStudentEnrollments(Model theModel) {
+		List<RDStudentEnrollment> studentEnrollments = studentEnrollmentService.getRDStudentEnrollments();
+		System.out.println(studentEnrollments);
+		theModel.addAttribute("studentEnrollments", studentEnrollments);
+		return "listStudentEnrollments";
+	}
+
 	@GetMapping("/listbyparent")
-    public String listRDStudentEnrollmentsByParent(Model theModel,HttpSession session) {
-		
+	public String listRDStudentEnrollmentsByParent(Model theModel, HttpSession session) {
+
 		RDUser parent = null;
 		if (session.getAttribute("rdUser") != null) {
 			parent = (RDUser) session.getAttribute("rdUser");
 		}
 
 		System.out.println("user - " + parent);
-        List < RDStudentEnrollment > studentEnrollments = studentEnrollmentService.getStudentEnrollmentByParent(parent.getUserID());
-        System.out.println(studentEnrollments);
-        theModel.addAttribute("studentEnrollments", studentEnrollments);
-        theModel.addAttribute("user", parent);
-        return "listStudentEnrollments";
-    }
+		List<RDStudentEnrollment> studentEnrollments = studentEnrollmentService
+				.getStudentEnrollmentByParent(parent.getUserID());
+		System.out.println(studentEnrollments);
+		theModel.addAttribute("studentEnrollments", studentEnrollments);
+		theModel.addAttribute("user", parent);
+		return "listStudentEnrollments";
+	}
 
 	@GetMapping("/listbystudent")
-    public String listRDStudentEnrollmentsByStudent(Model theModel,HttpSession session, @RequestParam("studentId") Integer studentId) {
+	public String listRDStudentEnrollmentsByStudent(Model theModel, HttpSession session) {
+
+		RDUser student = null;
+		if (session.getAttribute("rdUser") != null) {
+			student = (RDUser) session.getAttribute("rdUser");
+		}
+
+		System.out.println("user - " + student);
+		List<RDStudentEnrollment> studentEnrollments = studentEnrollmentService
+				.getStudentEnrollmentByStudent(student.getUserID());
+		System.out.println(studentEnrollments);
 		
-        List < RDStudentEnrollment > studentEnrollments = studentEnrollmentService.getStudentEnrollmentByStudent(studentId);
-        System.out.println(studentEnrollments);
-        theModel.addAttribute("studentEnrollments", studentEnrollments);
-        return "listStudentEnrollments";
-    }
-	
+		theModel.addAttribute("studentEnrollments", studentEnrollments);
+		return "listStudentEnrollments";
+	}
 
 	@GetMapping("/showCalendar")
-    public String showCalendar(Model theModel) {
-        List < RDStudentEnrollment > studentEnrollments = studentEnrollmentService.getRDStudentEnrollments();
-        System.out.println(studentEnrollments);
-        theModel.addAttribute("studentEnrollments", studentEnrollments);
-        return "showCalendar";
-    }
-	
+	public String showCalendar(Model theModel) {
+		List<RDStudentEnrollment> studentEnrollments = studentEnrollmentService.getRDStudentEnrollments();
+		System.out.println(studentEnrollments);
+		theModel.addAttribute("studentEnrollments", studentEnrollments);
+		return "showCalendar";
+	}
 
 	@GetMapping(value = "/viewCalendar", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
-	public List < RDStudentEnrollment >  getCourseOfferingList() {
-        List < RDStudentEnrollment > studentEnrollments = studentEnrollmentService.getRDStudentEnrollments();
-        System.out.println("inside view calendar");
-        System.out.println(studentEnrollments);
-        
-        return studentEnrollments;
-    }	
+	public List<RDStudentEnrollment> getCourseOfferingList() {
+		List<RDStudentEnrollment> studentEnrollments = studentEnrollmentService.getRDStudentEnrollments();
+		System.out.println("inside view calendar");
+		System.out.println(studentEnrollments);
 
-	
-    @GetMapping("/showEnrollmentForm")
-    public ModelAndView showEnrollmentForm(Model theModel, HttpSession session,
-    		@RequestParam("courseOfferingId") Integer courseOfferingId,
-    		@RequestParam("userId") Integer userId) {
-    	
-    	 RDStudentEnrollmentForm studentEnrollmentForm = new RDStudentEnrollmentForm();
-    	 RDCourseOffering courseOffering = courseOfferingService.getRDCourseOffering(courseOfferingId);
-         System.out.println(courseOffering);
-         
- 	
- 		List<RDUser> childs = userService.getRDChilds(userId);
- 		System.out.println(childs);
- 		theModel.addAttribute("childs", childs);
- 
-         studentEnrollmentForm.setCourseOfferingId(courseOfferingId);
-         
-         theModel.addAttribute("courseOffering", courseOffering);
-        theModel.addAttribute("studentEnrollmentForm", studentEnrollmentForm );
-        
-        
-		ModelAndView modelAndView = new ModelAndView("showEnrollmentForm");
+		return studentEnrollments;
+	}
+
+	@GetMapping("/showForm")
+	public ModelAndView showEnrollmentForm(Model theModel, HttpSession session) {
+
+		RDStudentEnrollmentForm studentEnrollmentForm = new RDStudentEnrollmentForm();
+
+		List<RDCourseOffering> courseOfferings = courseOfferingService.getRDCourseOfferings();
+
+		System.out.println(courseOfferings);
+
+		RDUser parent = null;
+		if (session.getAttribute("rdUser") != null) {
+			parent = (RDUser) session.getAttribute("rdUser");
+		}
+
+		System.out.println("user - " + parent);
+		List<RDUser> childs = userService.getRDChilds(parent.getUserID());
+		System.out.println(childs);
+		theModel.addAttribute("childs", childs);
+
+		theModel.addAttribute("courseOfferings", courseOfferings);
+		theModel.addAttribute("studentEnrollmentForm", studentEnrollmentForm);
+
+		ModelAndView modelAndView = new ModelAndView("student-enrollment-form");
 		return modelAndView;
-    }
-    
-  
-    @InitBinder
-    public void initBinder(WebDataBinder binder) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        dateFormat.setLenient(false);
-        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
-    }
-    
-	@PostMapping("/saveStudentEnrollment")
-    public String saveStudentEnrollment(@ModelAttribute("studentEnrollmentForm") RDStudentEnrollmentForm studentEnrollmentForm,
-    		@RequestParam("studentId") Integer studentId,
-    		BindingResult bindingResult) {
+	}
+
+	@GetMapping("/showEnrollmentForm")
+	public ModelAndView showEnrollmentForm(Model theModel, HttpSession session,
+
+			@RequestParam("courseOfferingId") Integer courseOfferingId) {
+
+		RDStudentEnrollmentForm studentEnrollmentForm = new RDStudentEnrollmentForm();
+		RDCourseOffering courseOffering = courseOfferingService.getRDCourseOffering(courseOfferingId);
+		System.out.println(courseOffering);
+
+		RDUser parent = null;
+		if (session.getAttribute("rdUser") != null) {
+			parent = (RDUser) session.getAttribute("rdUser");
+		}
+
+		System.out.println("user - " + parent);
 		
+		List<RDUser> childs = userService.getRDChilds(parent.getUserID());
+		System.out.println(childs);
+		theModel.addAttribute("childs", childs);
+
+		studentEnrollmentForm.setCourseOfferingId(courseOfferingId);
+
+		theModel.addAttribute("courseOffering", courseOffering);
+		theModel.addAttribute("studentEnrollmentForm", studentEnrollmentForm);
+
+		ModelAndView modelAndView = new ModelAndView("course-enrollment-form");
+		return modelAndView;
+	}
+
+	@InitBinder
+	public void initBinder(WebDataBinder binder) {
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		dateFormat.setLenient(false);
+		binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+	}
+
+	@PostMapping("/saveStudentEnrollment")
+	public String saveStudentEnrollment(
+			HttpSession session, @ModelAttribute("studentEnrollmentForm") RDStudentEnrollmentForm studentEnrollmentForm,
+			@RequestParam("studentId") Integer studentId, BindingResult bindingResult) {
+
 		System.out.println(studentEnrollmentForm);
-        if(bindingResult.hasErrors()) {
-        	 List<FieldError> errors = bindingResult.getFieldErrors();
-        	    for (FieldError error : errors ) {
-        	        System.out.println (error.getObjectName() + " - " + error.getDefaultMessage());
-        	    }
-        	  	return "showStudentEnrollmentForm";
-        }
-        
-    	RDStudentEnrollment theStudentEnrollment = new RDStudentEnrollment();
+		if (bindingResult.hasErrors()) {
+			List<FieldError> errors = bindingResult.getFieldErrors();
+			for (FieldError error : errors) {
+				System.out.println(error.getObjectName() + " - " + error.getDefaultMessage());
+			}
+			return "showStudentEnrollmentForm";
+		}
+		RDUser parent = null;
+		if (session.getAttribute("rdUser") != null) {
+			parent = (RDUser) session.getAttribute("rdUser");
+		}
 
-        System.out.println("i am here");
-    	RDCourseOffering courseOffering = courseOfferingService.getRDCourseOffering(studentEnrollmentForm.getCourseOfferingId());
-    	System.out.println("course offering id - " + studentEnrollmentForm.getCourseOfferingId());
-    	courseOffering.setCourseOfferingId(studentEnrollmentForm.getCourseOfferingId());
-        RDUser user = userService.getRDUser(studentEnrollmentForm.getUserID());
-    	user.setUserID(studentEnrollmentForm.getUserID());
-    	
-    	RDUser student = userService.getRDUser(studentId);
-    	student.setUserID(studentId);
-    	
-    	theStudentEnrollment.setEnrollmentDate(new Date());
+		System.out.println("user - " + parent);
 
-    	theStudentEnrollment.setCourseOffering(courseOffering);
-    	theStudentEnrollment.setParent(user);
-    	theStudentEnrollment.setStudent(student);
+
+		RDStudentEnrollment theStudentEnrollment = new RDStudentEnrollment();
+
+		System.out.println("i am here");
+		RDCourseOffering courseOffering = courseOfferingService
+				.getRDCourseOffering(studentEnrollmentForm.getCourseOfferingId());
+		System.out.println("course offering id - " + studentEnrollmentForm.getCourseOfferingId());
+		courseOffering.setCourseOfferingId(studentEnrollmentForm.getCourseOfferingId());
+		RDUser user = userService.getRDUser(studentEnrollmentForm.getStudentId());
+		user.setUserID(studentEnrollmentForm.getStudentId());
+
+		RDUser student = userService.getRDUser(studentId);
+		student.setUserID(studentId);
+
+		theStudentEnrollment.setEnrollmentDate(new Date());
+
+		theStudentEnrollment.setCourseOffering(courseOffering);
+		theStudentEnrollment.setParent(parent);
+		theStudentEnrollment.setStudent(student);
 		studentEnrollmentService.saveRDStudentEnrollment(theStudentEnrollment);
 
+		return "redirect:/enrollment/listbyparent";
+	}
 
-        
-        return "redirect:/enrollment/list";
-    }
-	
 }

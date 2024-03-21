@@ -58,6 +58,19 @@ public class RDCourseController {
 		return modelAndView;
 	}
 	
+	@GetMapping("/monitor")
+	public ModelAndView monitor(Model theModel, @RequestParam("courseId") int theId) {
+		
+		
+		RDCourse course = service.getRDCourse(theId);
+		System.out.println("hello....course id............." + course.getCourseId());
+		System.out.println("hello....course name............." + course.getCourseName());
+        theModel.addAttribute("course", course);
+		
+		ModelAndView modelAndView = new ModelAndView("monitor");
+		return modelAndView;
+	}
+	
 	@PostMapping("/saveCourse")
     public String saveCourse(@ModelAttribute("courseForm") RDCourseForm courseForm,
     		BindingResult result) {

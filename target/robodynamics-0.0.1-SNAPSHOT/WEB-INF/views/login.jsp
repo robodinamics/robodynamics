@@ -183,7 +183,6 @@ background: radial-gradient(circle, rgba(132,156,235,1) 0%, rgba(0,76,146,0.6383
 </head>
 <body>
    <%@ include file="/WEB-INF/views/showHeader.jsp" %>
-	
 	<div class="wrapper">
     <div class="container main">
         <div class="row">
@@ -227,7 +226,6 @@ background: radial-gradient(circle, rgba(132,156,235,1) 0%, rgba(0,76,146,0.6383
         </div>
     </div>
 </div>
-   <%@ include file="/WEB-INF/views/footer.jsp" %>
 
 	</div>
 </body>

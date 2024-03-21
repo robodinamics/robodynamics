@@ -36,9 +36,65 @@
         <button class="btn btn-primary btn-lg" type="button">Get Started</button>
       </div>
     </div>
+   </div>
+    <section class="team-section">
+    	
+    	 <div class="container text-center py-5">
+        <h3>Our Team</h3>
+        <h4 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, explicabo.</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img src="${pageContext.request.contextPath}/resources/images/5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, neque.</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="${pageContext.request.contextPath}/resources/images/5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, neque.</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="${pageContext.request.contextPath}/resources/images/5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, neque.</p>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+         
+          </div>
     </div>
     
-   </main>
+    </section>
+    
+</main>
     <%@ include file="/WEB-INF/views/footer.jsp" %>
 
 </body>

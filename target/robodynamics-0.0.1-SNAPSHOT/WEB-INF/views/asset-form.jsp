@@ -41,7 +41,7 @@
 				<div class="panel panel-info">
 					<div class="panel-heading">
 						<br>
-						<h2>Add Asset</h2>
+						<h2>Manage Asset</h2>
 					</div>
 					<div class="panel-body">
 						<form:form action="saveAsset" cssClass="form-horizontal"
@@ -71,14 +71,26 @@
 									</form:select>
 								</div>
 							</div>
-							<div class="form-group">
-								<label for="imageFile" class="col-md-3 control-label">
-									Upload Picture </label>
-								<div class="col-md-9">
-									<form:input path="imageFile" type="file"
-										cssClass="form-control" />
+							
+								<div class="form-group">
+									<label for="assetQuantity" class="col-md-3 control-label">Asset
+										Quantity </label>
+									<div class="col-md-9">
+										<form:input path="assetQuantity" cssClass="form-control" />
+									</div>
 								</div>
-							</div>
+							
+							<c:if test="${empty assetId}">
+						
+								<div class="form-group">
+									<label for="imageFile" class="col-md-3 control-label">
+										Upload Picture </label>
+									<div class="col-md-9">
+										<form:input path="imageFile" type="file"
+											cssClass="form-control" />
+									</div>
+								</div>
+							</c:if>
 
 							<br>
 							<center>

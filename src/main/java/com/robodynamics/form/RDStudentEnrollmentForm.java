@@ -13,7 +13,10 @@ public class RDStudentEnrollmentForm {
 	private int courseOfferingId;
 	private int courseId;
 	private String courseName;
-	private int userID;
+	private int studentId;
+	
+	private int parentId;
+	
 	private String status;
 
     private String startDate;
@@ -62,12 +65,19 @@ public class RDStudentEnrollmentForm {
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
-	public int getUserID() {
-		return userID;
+	public int getStudentId() {
+		return studentId;
 	}
-	public void setUserID(int userID) {
-		this.userID = userID;
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
 	}
+	public int getParentId() {
+		return parentId;
+	}
+	public void setParentId(int parentId) {
+		this.parentId = parentId;
+	}
+	
 	
 	
 

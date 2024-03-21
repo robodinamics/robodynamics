@@ -27,7 +27,68 @@
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/showHeader.jsp"%>
-	<br>
+	
+<div class="wrapper">
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-6 side-image bg-custom">
+                       
+                <img src="${pageContext.request.contextPath}/resources/images/rdlogotransparent.png" width="auto" height="60px" alt="" class="my-3">
+                
+                <div class="text text-dark">
+                    <p>Experienced instructors passionate about STEM education <i>- RoboDynamics</i></p>
+                </div>
+                
+            </div>
+            <div class="col-md-6 right">
+                
+                <div class="input-box">
+                   
+                   <header>Registration</header>
+                <c:if test="${success != null}">
+				<div style="color: green; font-size: 20px;" role="alert">
+					<c:out value="${success}" />
+				</div>
+				</c:if>
+                <f:form action="registerParentPageOne" modelAttribute="rdUser" method="post">
+					<div class="form-group input-field">
+						<label for="exampleInputEmail1">Email</label>
+						<f:input type="text" path="email" class="form-control input"
+							id="exampleInputEmail1" aria-describedby="emailHelp" />
+					</div>
+					
+					<div class="form-group input-field">
+						<label for="exampleInputEmail1">Cell Phone</label>
+						<f:input type="text" path="cellPhone" class="form-control input"
+							id="exampleInputEmail1" aria-describedby="emailHelp" />
+					</div>
+					
+					<div class="form-group input-field">
+						<label for="exampleInputEmail1">First Name</label>
+						<f:input type="text" path="firstName" class="form-control input"
+							id="exampleInputEmail1" aria-describedby="emailHelp" />
+					</div>
+					<div class="form-group input-field">
+						<label for="exampleInputEmail1">Last Name</label>
+						<f:input type="text" path="lastName" class="form-control input"
+							id="exampleInputEmail1" aria-describedby="emailHelp" />
+					</div>
+					<br>
+					<center>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</center>
+				</f:form> 
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+<br>
 	<br>
 	<br>
 	<br>
@@ -101,5 +162,3 @@
 		</div>
 		</div>
 	</div>
-</body>
-</html>

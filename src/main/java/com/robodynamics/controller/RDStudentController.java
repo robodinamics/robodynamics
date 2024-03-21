@@ -46,4 +46,17 @@ public class RDStudentController {
 		ModelAndView modelAndView = new ModelAndView("studentDashboard");
 		return modelAndView;
 	}
+	
+	@GetMapping("/viewcourses")
+	public ModelAndView viewCourses(@ModelAttribute("rdUser") RDUser rdUser, Model m, HttpSession session) {
+		System.out.println(rdUser);
+		m.addAttribute("rdUser", rdUser);
+		
+		if (rdUser != null) {
+			session.setAttribute("rdUser", rdUser);
+		}
+
+		ModelAndView modelAndView = new ModelAndView("/enrollment/listbystudent");
+		return modelAndView;
+	}
 }

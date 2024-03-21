@@ -33,6 +33,7 @@ svg{
     bottom: 0;
     background: rgb(2,0,36);
 	background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 100%);
+	
 }
 .slider .list .item .content{
     position: absolute;
@@ -151,3 +152,5 @@ svg{
         top: 10%;
     }
 }
+
+

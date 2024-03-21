@@ -33,7 +33,6 @@
     <h1 class="display-4">Summer Camp Pricing</h1>
     <p class="lead">Pricing for 4 days a week 3hrs a day</p>
 </div>
-
 <div class="row row-cols-1 row-cols-md-3 mb-3 text-center m-5">
     <div class="col">
         <div class="card h-100 mb-4 rounded-3 shadow-sm d-flex flex-column">

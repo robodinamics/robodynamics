@@ -7,9 +7,12 @@ C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\RDAssetItemDao.ja
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\RDAssetItemService.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\RDAssetResource.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\RDAssetCategoryService.java
+C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDStudentEnrollmentController.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\Event.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\RDUserDao.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDCourseController.java
+C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\form\RDStudentEnrollmentForm.java
+C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\impl\RDStudentEnrollmentDaoImpl.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\RDCourseResource.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\impl\RDCourseOfferingDaoImpl.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\RDAssetTransactionService.java
@@ -22,6 +25,7 @@ C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDCourseCa
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\RDCourseService.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\RDCourseOfferingService.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\impl\RDCourseOfferingServiceImpl.java
+C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\RDStudentEnrollmentDao.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\impl\RDCourseCategoryServiceImpl.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\form\RDCourseForm.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\impl\RDUserServiceImpl.java
@@ -33,6 +37,7 @@ C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\util\EmailUtil.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\RDCourseDao.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDStudentController.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\RDCourseOffering.java
+C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\RDCourseOfferingDao.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\HelloWorldController.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\impl\EmailServiceImpl.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\impl\RDUserDaoImpl.java
@@ -52,15 +57,17 @@ C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\impl\RDAssetS
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\RDAssetTransaction.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDAssetCategoryController.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\impl\RDCourseCategoryImpl.java
+C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\RDStudentEnrollment.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDCourseOfferingController.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\EmailService.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\RDAssetItem.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\impl\RDAssetCategoryDaoImpl.java
+C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\impl\RDStudentEnrollmentServiceImpl.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\dao\impl\RDAssetDaoImpl.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\impl\RDAssetTransactionServiceImpl.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDParentController.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\RDAsset.java
-C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\RDCourseOfferingDao.java
+C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\service\RDStudentEnrollmentService.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDAssetController.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\model\RDCourseCategory.java
 C:\rdworkspace\robodynamics\src\main\java\com\robodynamics\controller\RDUserController.java

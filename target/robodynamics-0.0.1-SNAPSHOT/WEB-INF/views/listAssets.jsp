@@ -55,6 +55,7 @@
 							<tr>
 								<th>Asset Name</th>
 								<th>Asset Category</th>
+								<th> Asset Quantity </th>
 								<th>Asset Resource Name</th>
 							</tr>
 							<!-- loop over and print our asset categories -->
@@ -73,14 +74,15 @@
 								<tr>
 									<td>${tempAsset.assetName}</td>
 									<td>${tempAsset.assetCategory.assetCategoryName}</td>
+									<td>${tempAsset.assetQuantity}</td>
 									<td><img alt="Image" class="img-responsive" width="307" height="240"
 										src="<c:url value="/resources/images/${tempAsset.assetResources.iterator().next().assetResourceFileName}"/>" />
 									</td>
-									<td>
+<%-- 									<td>
 										<!-- display the update link --> <a href="${updateLink}">Update</a>
 										| <a href="${deleteLink}"
 										onclick="if (!(confirm('Are you sure you want to delete this asset?'))) return false">Delete</a>
-									</td>
+									</td> --%>
 
 								</tr>
 

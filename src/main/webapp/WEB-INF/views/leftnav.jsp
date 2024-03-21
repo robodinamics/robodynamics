@@ -31,6 +31,11 @@
 						class="fs-4 d-none d-sm-inline"> Course Categories </span>
 
 				</a></li>
+				<li class="nav-item"><a href="${pageContext.request.contextPath}/course/list"
+					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
+						class="fs-4 d-none d-sm-inline"> Courses </span>
+
+				</a></li>
 				<li class="nav-item"><a href="${pageContext.request.contextPath}/courseoffering/list"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
 						class="fs-4 d-none d-sm-inline"> Course Offerings </span>
@@ -89,7 +94,7 @@
 
 				</a></li>
 
-				<li class="nav-item"><a href="${pageContext.request.contextPath}/studentenrollment/listbyparent"
+				<li class="nav-item"><a href="${pageContext.request.contextPath}/enrollment/listbyparent"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
 						class="fs-4 d-none d-sm-inline"> Course Enrollment </span>
 
@@ -130,25 +135,18 @@
 				<span class="fs-4 d-none d-sm-inline"> Student Dashboard </span>
 			</a>
 			<ul class="nav nav-pills flex-column mt-4">
-				<li class="nav-item"><a href="parent/legos"
+				<li class="nav-item"><a href="student/legos"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
-						class="fs-4 d-none d-sm-inline"> Build/Rent Legos</span>
+						class="fs-4 d-none d-sm-inline"> view legos built</span>
 
 				</a></li>
-				<li class="nav-item"><a href="parent/3dPens"
+				<li class="nav-item"><a href="student/3dPens"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
-						class="fs-4 d-none d-sm-inline"> Browse 3D Pen Templates</span>
-
+						class="fs-4 d-none d-sm-inline"> view 3d models</span>
 				</a></li>
-				<li class="nav-item"><a href="parent/viewForm"
+				<li class="nav-item"><a href="${pageContext.request.contextPath}/enrollment/listbystudent"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
-						class="fs-4 d-none d-sm-inline"> View History </span>
-
-				</a></li>
-				<li class="nav-item"><a href="parent/showCalendar"
-					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
-						class="fs-4 d-none d-sm-inline"> View Calendar </span>
-
+						class="fs-4 d-none d-sm-inline"> View Courses </span>
 				</a></li>
 			</ul>
 		</div>

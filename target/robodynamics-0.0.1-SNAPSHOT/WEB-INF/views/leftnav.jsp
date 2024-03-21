@@ -59,7 +59,7 @@
 						class="fs-4 d-none d-sm-inline"> Browse 3D Pen Templates</span>
 
 				</a></li>
-				<li class="nav-item"><a href="${pageContext.request.contextPath}/assettransaction/viewForm"
+				<li class="nav-item"><a href="${pageContext.request.contextPath}/assettransaction/viewHistory"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
 						class="fs-4 d-none d-sm-inline"> View History </span>
 
@@ -88,17 +88,25 @@
 						class="fs-4 d-none d-sm-inline"> My Profile</span>
 
 				</a></li>
+
+				<li class="nav-item"><a href="${pageContext.request.contextPath}/studentenrollment/listbyparent"
+					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
+						class="fs-4 d-none d-sm-inline"> Course Enrollment </span>
+
+				</a></li>
+
 				<li class="nav-item"><a href="${pageContext.request.contextPath}/parent/legos"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
 						class="fs-4 d-none d-sm-inline"> Build/Rent Legos</span>
 
 				</a></li>
+
 				<li class="nav-item"><a href="${pageContext.request.contextPath}/parent/3dPens"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
 						class="fs-4 d-none d-sm-inline"> Browse 3D Pen Templates</span>
 
 				</a></li>
-				<li class="nav-item"><a href="${pageContext.request.contextPath}/assettransaction/viewForm"
+				<li class="nav-item"><a href="${pageContext.request.contextPath}/assettransaction/viewHistory"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
 						class="fs-4 d-none d-sm-inline"> View History </span>
 

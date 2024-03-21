@@ -5,8 +5,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Your Page Title</title>
     <style>
+    body {
+    	overflow-x: hidden;
+    }
     </style>
 </head>
 <body>
