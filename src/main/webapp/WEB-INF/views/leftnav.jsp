@@ -16,6 +16,12 @@
 				<span class="fs-4 d-none d-sm-inline"> Admin Dashboard </span>
 			</a>
 			<ul class="nav nav-pills flex-column mt-4">
+					<li class="nav-item"><a href="${pageContext.request.contextPath}/user/list"
+					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
+						class="fs-4 d-none d-sm-inline"> Users </span>
+
+				</a></li>
+							
 				<li class="nav-item"><a href="${pageContext.request.contextPath}/assetcategory/list"
 					class="nav-link text-white"> <i class="fs-5 fa-guage"></i> <span
 						class="fs-4 d-none d-sm-inline"> Asset Categories</span>
