@@ -26,12 +26,22 @@ public class RDUserController {
 		return modelAndView;
 	}
 
+	@GetMapping("/membership")
+	public ModelAndView home(Model m) {
+		RDUser rdUser = new RDUser();
+		m.addAttribute("rdUser", rdUser);
+		ModelAndView modelAndView = new ModelAndView("membership");
+		return modelAndView;
+	}
+	
 	@PostMapping("/register")
 	public String register(@ModelAttribute("rdUser") RDUser rdUser, Model model) {
 		service.registerRDUser(rdUser);
 		model.addAttribute("success", "Registered Successfully");
 		return "login";
 	}
+	
+	
 
 	@GetMapping("/login")
 	public String loginDisplay(Model m, HttpSession session) {

@@ -5,14 +5,73 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    body {
-    	overflow-x: hidden;
-    }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="${pageContext.request.contextPath}/resources/css/navbar.css" rel="stylesheet">
 </head>
 <body>
-    <c:set var="user" value="${sessionScope.rdUser}" />
+<c:set var="user" value="${sessionScope.rdUser}" />
+ <header> 
+	<div class=navbar>
+		<div class=logo>
+			<img src="${pageContext.request.contextPath}/resources/images/rdlogotransparent.png" alt="RoboDynamics"/>
+		</div>
+		<ul class=links>
+			<li><a href="${pageContext.request.contextPath}">Home</a></li>
+			<li><a href='<c:url value="/aboutus"></c:url>'>About</a></li>
+			<li><a href='<c:url value="membership"></c:url>'>Membership</a></li>
+		</ul>
+		<div class="action_btns">
+			<a href="${pageContext.request.contextPath}/parent/register" class="action_btn">Sign Up</a>
+			<a href="${pageContext.request.contextPath}/login" class="action_btn">Login</a>
+		</div>
+		<div class="toggle_btn">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+	</div>
+	
+	
+	<div class="dropdown_menu">
+		<li><a href="${pageContext.request.contextPath}">Home</a></li>
+		<li><a href='<c:url value="/aboutus"></c:url>'>About</a></li>
+		<li><a href='<c:url value="/membership"></c:url>'>Membership</a></li>
+		<li><a href="${pageContext.request.contextPath}/parent/register" class="action_btn">Sign Up</a></li>
+		<li><a href="${pageContext.request.contextPath}/login" class="action_btn">Login</a></li>
+	</div>
+ </header>
+ <script src="${pageContext.request.contextPath}/resources/js/navbar.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%--     <c:set var="user" value="${sessionScope.rdUser}" />
     <header>
         <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white">
             <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -58,29 +117,5 @@
             </div>
         </nav>
     </header>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var dropdowns = document.querySelectorAll('.dropdown');
-
-            dropdowns.forEach(function(dropdown) {
-                dropdown.addEventListener('click', function(event) {
-                    event.stopPropagation();
-                    var menu = this.querySelector('.dropdown-menu');
-                    menu.classList.toggle('show');
-                });
-            });
-
-            // Close dropdown when clicked anywhere on the document
-            document.addEventListener('click', function(event) {
-                dropdowns.forEach(function(dropdown) {
-                    var menu = dropdown.querySelector('.dropdown-menu');
-                    if (!dropdown.contains(event.target) && menu.classList.contains('show')) {
-                        menu.classList.remove('show');
-                    }
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+ --%>
+   

@@ -29,6 +29,7 @@
 .wrapper{
     background: #ececec;
     padding: 0 20px 0 20px;
+    margin-top: 10px;
 }
 .main{
     display: flex;
