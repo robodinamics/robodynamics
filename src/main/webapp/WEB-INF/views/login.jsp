@@ -16,7 +16,7 @@
       <div class="box">
         <div class="inner-box">
           <div class="forms-wrap">
-            <form action="index.html" autocomplete="off" class="sign-in-form">
+            <f:form action="login" modelAttribute="rdUser" autocomplete="off" class="sign-in-form" method="post">
               <div class="logo">
                 <img src="${pageContext.request.contextPath}/resources/images/loginlogo.png" alt="" />
                 <h4>Robo<span>Dynamics</span></h4>
@@ -30,23 +30,23 @@
 
               <div class="actual-form">
                 <div class="input-wrap">
-                  <input
-                    type="text"
+                  <f:input
+                    type="text" path="userName"
                     minlength="4"
                     class="input-field"
                     autocomplete="off"
-                    required
+                    
                   />
                   <label>Name</label>
                 </div>
 
                 <div class="input-wrap">
-                  <input
-                    type="password"
+                  <f:input
+                    type="password" path="password"
                     minlength="4"
                     class="input-field"
                     autocomplete="off"
-                    required
+                    
                   />
                   <label>Password</label>
                 </div>
@@ -58,9 +58,9 @@
                   <a href="#">Get help</a> signing in
                 </p>
               </div>
-            </form>
+            </f:form>
 
-            <form action="index.html" autocomplete="off" class="sign-up-form">
+            <f:form action="login" modelAttribute="rdUser" autocomplete="off" class="sign-up-form">
               <div class="logo">
                 <img src="${pageContext.request.contextPath}/resources/images/loginlogo.png" alt="" />
                 <h4>RoboDynamics</h4>
@@ -74,24 +74,18 @@
 
               <div class="actual-form">
                 <div class="input-wrap">
-                  <input
-                    type="text"
+                  <f:input
+                    type="text" path="userName"
                     minlength="4"
                     class="input-field"
                     autocomplete="off"
-                    required
+                    
                   />
                   <label>Name</label>
                 </div>
 
                 <div class="input-wrap">
-                  <input
-                    type="password"
-                    minlength="4"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                  />
+                  <f:input type="text" path="userName" minlength="4" id="userName" class="input-field"  autocomplete="off"  />
                   <label>Password</label>
                 </div>
 
@@ -103,7 +97,7 @@
                   <a href="#">Privacy Policy</a>
                 </p>
               </div>
-            </form>
+            </f:form>
           </div>
 
           <div class="carousel">

@@ -20,7 +20,7 @@ public class RDStaticController {
 
 	@GetMapping("/home")
 	public String home(Model m, HttpSession session) {
-		return "membership";
+		return "home";
 	}
 	
 

@@ -12,6 +12,8 @@ import org.springframework.web.servlet.ModelAndView;
 import com.robodynamics.model.RDUser;
 import com.robodynamics.service.RDUserService;
 
+import java.util.List;
+
 @Controller
 public class RDUserController {
 
@@ -26,14 +28,14 @@ public class RDUserController {
 		return modelAndView;
 	}
 
-	@GetMapping("/membership")
-	public ModelAndView home(Model m) {
-		RDUser rdUser = new RDUser();
-		m.addAttribute("rdUser", rdUser);
-		ModelAndView modelAndView = new ModelAndView("membership");
+	@GetMapping("/listusers")
+	public ModelAndView listusers(Model m) {
+		List < RDUser > rdUserList = service.getRDUsers();
+		m.addAttribute("rdUserList", rdUserList);
+		ModelAndView modelAndView = new ModelAndView("manageusers");
 		return modelAndView;
 	}
-	
+
 	@PostMapping("/register")
 	public String register(@ModelAttribute("rdUser") RDUser rdUser, Model model) {
 		service.registerRDUser(rdUser);
@@ -60,6 +62,8 @@ public class RDUserController {
 	
 	@PostMapping("/login")
 	public String login(@ModelAttribute("rdUser") RDUser rdUser, Model model, HttpSession session) {
+		
+		System.out.println("RD user - " + rdUser);
 		RDUser rdUser2 = service.loginRDUser(rdUser);
 		System.out.println("rdUser2" + rdUser2);
 		if (rdUser2 != null) {
