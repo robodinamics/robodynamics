@@ -10,174 +10,212 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="generator" content="Hugo 0.84.0">
-<title>Robo Dynamics</title>
+<title>RoboDynamics | Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="${pageContext.request.contextPath}/resources/css/index.css" rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-	crossorigin="anonymous">
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-	crossorigin="anonymous" type="text/javascript"></script>
+
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/showHeader.jsp"%>
 	
 	<main>
-    <div class="slider">
+	<section class="hero">
+		<div class="slider">
         <div class="list">
-            <div class="item active">
-                <img src="${pageContext.request.contextPath}/resources/images/1.png">
-                <div class="content">
-                    <p>RoboDynamics</p>
-                    <h2>Build</h2>
-                    <p>At RoboDynamics, we believe in nurturing creativity, fostering innovation, and inspiring the next generation of inventors and technologists. Through our dynamic workshops and hands-on programs, we provide young minds with the tools, knowledge, and skills to thrive in today's digital age.
-                    </p>
-                </div>
-            </div>
             <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/2.png">
+                <img src="${pageContext.request.contextPath}/resources/images/1.png" alt="">
                 <div class="content">
-                    <p>RoboDynamics</p>
-                    <h2>Learn</h2>
-                    <p>
-                    Experienced instructors passionate about STEM education
-					Hands-on learning experiences tailored to different age groups
-					Cutting-edge curriculum designed to spark curiosity and creativity
-					Accessible membership plans catering to diverse interests and skill levels
-                    </p>
+                    <div class="title">Robo Dynamics</div>
+                    <!-- <div class="type">FLOWER</div> -->
+                    <div class="description">
+						At Robo Dynamics, we are committed to nurturing the curious minds of young learners and igniting their passion for technology and innovation. As a premier robotics training institute tailored for kids, we provide a encourages creativity, critical thinking, and hands-on exploration.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
                 </div>
             </div>
+
             <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/3.png">
+                <img src="${pageContext.request.contextPath}/resources/images/2.png" alt="">
+
                 <div class="content">
-                    <p>RoboDynamics</p>
-                    <h2>Create</h2>
-                    <p>
-                    Join Us Today and Unleash Your Potential!
-					<p>Ready to embark on a journey of discovery and innovation? Explore our membership plans and enroll in our workshops today to unlock a world of endless possibilities at Robo Dynamics
-                    </p>
+                    <div class="title">Our Vision</div>
+                    <!-- <div class="type">NATURE</div> -->
+                    <div class="description">
+                        At Robo-Dynamcis , our vision is to be a beacon of inspiration and education for young minds aged 7 to 15, fostering a generation of future-ready innovators who possess the skills, knowledge, and confidence to thrive in an increasingly technology-driven world.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
                 </div>
             </div>
+
             <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/4.png">
+                <img src="${pageContext.request.contextPath}/resources/images/3.png" alt="">
+
                 <div class="content">
-                    <p>design</p>
-                    <h2>Drones</h2>
-                    <p>
-                    Join Us Today and Unleash Your Potential!
-							<p>Ready to embark on a journey of discovery and innovation? Explore our membership plans and enroll in our workshops today to unlock a world of endless possibilities at Robo Dynamics
-                    </p>
+                    <div class="title">Our Mission</div>
+                    <!-- <div class="type">PLANT</div> -->
+                    <div class="description">
+                    	Our mission is to inspire the next generation of innovators problem solvers. We believe that every child has unique talents waiting to be unlocked. Through our diverse we develop coding, robotics, drones, 3D printing, an that celebrates curiosity, allowing children to dream big and pursue their interest.   
+                    </div>
+                    <div class="button hideBtn">
+                        <button>SEE MORE</button>
+                    </div>
                 </div>
             </div>
+
             <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/5.png">
+                <img src="${pageContext.request.contextPath}/resources/images/4.png" alt="">
+
                 <div class="content">
-                    <p>design</p>
-                    <h2>Coding</h2>
-                    <p>Join Us Today and Unleash Your Potential!
-							<p>Ready to embark on a journey of discovery and innovation? Explore our membership plans and enroll in our workshops today to unlock a world of endless possibilities at Robo Dynamics
-                    </p>
+                    <div class="title">Our Offerings</div>
+                    <!-- <div class="type">NATURE</div> -->
+                    <div class="description">
+                    	At Robo Dynamics, we offer a wide spectrum of engaging and educational programs designed to cater to various interests and skill levels: Coding, Drones, Robotics and much more!	
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
                 </div>
             </div>
+
         </div>
-        <div class="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
+
+
         <div class="thumbnail">
-            <div class="item active">
-                <img src="${pageContext.request.contextPath}/resources/images/1.png">
-                <div class="content">
-                    Build
-                </div>
+
+            <div class="item">
+                <img src="${pageContext.request.contextPath}/resources/images/1.png" alt="">
             </div>
             <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/2.png">
-                <div class="content">
-                    Learn
-                </div>
+                <img src="${pageContext.request.contextPath}/resources/images/2.png" alt="">
             </div>
             <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/3.png">
-                <div class="content">
-                    Create
-                </div>
+                <img src="${pageContext.request.contextPath}/resources/images/3.png" alt="">
             </div>
             <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/4.png">
-                <div class="content">
-                    Drones
-                </div>
+                <img src="${pageContext.request.contextPath}/resources/images/4.png" alt="">
             </div>
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/5.png">
-                <div class="content">
-                    Coding
-                </div>
-            </div>
+
         </div>
+
+
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+
+
     </div>
-	</main>
+    </section>
+	<section class="gallery-cont">
+		<h1>Gallery</h1>
+      <div class="wrapper">
+		    <div class="gallery">
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/1.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/2.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/3.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/4.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/2.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/3.png" alt=""></span></div>
+		    </div>
+		  </div>
+		  <div class="preview-box">
+		    <div class="details">
+		      <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+		      <span class="icon fas fa-times"></span>
+		    </div>
+		    <div class="image-box">
+		      <div class="slide prev-g"><i class="fas fa-angle-left"></i></div>
+		      <div class="slide next-g"><i class="fas fa-angle-right"></i></div>
+		      <img src="" alt="">
+		    </div>
+		  </div>
+		  <div class="shadow"></div>
+	</section>
+	<section class="video-cont">
+		<h1>Videos</h1>
+		<div class="video-container">
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+		</div>
+		
+		<div class="popup-video">
+			<span>&times;</span>
+			<video src="${pageContext.request.contextPath}/resources/video/video.mp4"  autoplay controls></video>
+		</div>
+	</section>	
+	
+	<section class="features">
+		 <div class="row">
+        <h2 class="section-heading">What we offer</h2>
+      </div>
+      <div class="row-feature">
+        <div class="column-feature">
+          <div class="card-feature">
+            <div class="icon-wrapper">
+            <i class="fa-solid fa-cubes-stacked"></i>
+            </div>
+            <h3>LEGOS</h3>
+            <p>
+            	Some text goes here
+            </p>
+          </div>
+        </div>
+        <div class="column-feature">
+          <div class="card-feature">
+            <div class="icon-wrapper">
+            <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3>Drones</h3>
+            <p>
+            	Some text goes here
+            </p>
+          </div>
+        </div>
+        <div class="column-feature">
+          <div class="card-feature">
+            <div class="icon-wrapper">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Robotics</h3>
+            <p>
+              Some text goes here
+            </p>
+          </div>
+        </div>
+       
+      </div>
+	</section>
+    
+    <section class="contact">
+    	<div class="contact-map">
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.4462482038034!2d77.76021401023883!3d12.879001916850108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7309ba85df81%3A0x79e9e7ac13776a2f!2sRobo%20Dynamics!5e0!3m2!1sen!2sin!4v1711717867209!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    	<div class="contact-form">
+    		<h1>Contact Us</h1>
+    		<form>
+    			<input type="text" placeholder="Name" class="contact-form-txt"/>
+    			<input type="email" placeholder="Email" class="contact-form-txt"/>
+    			<textarea placeholder="Message"class="contact-form-txtarea"></textarea>
+    			<input type="submit" name="Submit" class="contact-form-btn"/>
+    		</form>
+    	</div>
+    </section>
+    
+    </main>
+
  
 	<%@ include file="/WEB-INF/views/footer.jsp"%>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
 	
-	<script>
-	let items = document.querySelectorAll('.slider .list .item');
-	let next = document.getElementById('next');
-	let prev = document.getElementById('prev');
-	let thumbnails = document.querySelectorAll('.thumbnail .item');
 
-	// config param
-	let countItem = items.length;
-	let itemActive = 0;
-	// event next click
-	next.onclick = function(){
-	    itemActive = itemActive + 1;
-	    if(itemActive >= countItem){
-	        itemActive = 0;
-	    }
-	    showSlider();
-	}
-	//event prev click
-	prev.onclick = function(){
-	    itemActive = itemActive - 1;
-	    if(itemActive < 0){
-	        itemActive = countItem - 1;
-	    }
-	    showSlider();
-	}
-	// auto run slider
-	let refreshInterval = setInterval(() => {
-	    next.click();
-	}, 5000)
-	function showSlider(){
-	    // remove item active old
-	    let itemActiveOld = document.querySelector('.slider .list .item.active');
-	    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
-	    itemActiveOld.classList.remove('active');
-	    thumbnailActiveOld.classList.remove('active');
-
-	    // active new item
-	    items[itemActive].classList.add('active');
-	    thumbnails[itemActive].classList.add('active');
-
-	    // clear auto time run slider
-	    clearInterval(refreshInterval);
-	    refreshInterval = setInterval(() => {
-	        next.click();
-	    }, 5000)
-	}
-
-	// click thumbnail
-	thumbnails.forEach((thumbnail, index) => {
-	    thumbnail.addEventListener('click', () => {
-	        itemActive = index;
-	        showSlider();
-	    })
-	})
-	</script>
 </body>
 </html>

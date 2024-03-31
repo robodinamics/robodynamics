@@ -22,6 +22,10 @@
 	crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<c:set var="user" value="${sessionScope.rdUser}" />
+
+<c:set var="userRole" value="${user.profile_id}" />
+
 <title>Welcome</title>
 
 </head>
@@ -38,40 +42,42 @@
 				<br>
 				<h2>View Courses Enrolled</h2>
 				<hr />
-				<input type="button" value="Enroll Course"
-					onclick="window.location.href='showEnrollmentForm'; return false;"
-					class="btn btn-primary" /> <br />
-				<br />
+				<c:if test="${userRole eq 4}">
+					<input type="button" value="Enroll Course"
+						onclick="window.location.href='showForm'; return false;"
+						class="btn btn-primary" />
+				</c:if>
+				<br /> <br />
 
 				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h2>View Courses Enrolled</h2>
-					</div>
 					<div class="panel-body">
 						<table class="table table-striped table-bordered">
 							<tr>
 								<th>Course Name</th>
 								<th>Instructor</th>
-								<th>Student</th>	
-								<th>Enrollment Date</th>
+								<th>Student</th>
+								<th>Start Session</th>
 								<th>Course Offering Start Date</th>
 								<th>Course Offering End Date</th>
+
 							</tr>
+
 							<!-- loop over and print our course categories -->
-							<c:forEach var="tempStudentEnrollment" items="${studentEnrollments}">
-							
-								<!-- select a course offering to enroll -->
-							       <c:url var="enrollLink" value="/studentenrollment/showEnrollmentForm">
-							        <c:param name="courseOfferingId" value="${courseOffering.courseOfferingId}" />
-							        <c:param name="userId" value="${user.userID}" />
-							       </c:url>
+							<c:forEach var="tempStudentEnrollment"
+								items="${studentEnrollments}">
+
+								<c:url var="updateLink" value="/course/monitor">
+									<c:param name="courseId"
+										value="${tempStudentEnrollment.courseOffering.course.courseId}" />
+								</c:url>
+
 								<tr>
 									<td>${tempStudentEnrollment.courseOffering.course.courseName}</td>
 									<td>${tempStudentEnrollment.courseOffering.instructor.firstName}
 										${tempStudentEnrollment.courseOffering.instructor.lastName}</td>
 									<td>${tempStudentEnrollment.student.firstName}
 										${tempStudentEnrollment.student.lastName}</td>
-									<td>${tempStudentEnrollment.enrollmentDate}</td>	
+									<td><!-- display the update link --> <a href="${updateLink}">Start Session</a></td>
 									<td>${tempStudentEnrollment.courseOffering.startDate}</td>
 									<td>${tempStudentEnrollment.courseOffering.endDate}</td>
 								</tr>

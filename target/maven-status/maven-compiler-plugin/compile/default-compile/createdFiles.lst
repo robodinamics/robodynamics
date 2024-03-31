@@ -19,6 +19,7 @@ com\robodynamics\service\RDStudentEnrollmentService.class
 com\robodynamics\controller\RDStudentEnrollmentController.class
 com\robodynamics\dao\RDAssetCategoryDao.class
 com\robodynamics\model\RDCourse.class
+com\robodynamics\controller\RDCourseMonitorController.class
 com\robodynamics\service\impl\RDCourseOfferingServiceImpl.class
 com\robodynamics\model\RDAssetItem.class
 com\robodynamics\dao\impl\RDUserDaoImpl.class

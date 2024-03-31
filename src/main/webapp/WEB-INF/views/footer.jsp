@@ -15,12 +15,14 @@
                   <div class="col" id="company">
                       <img src="${pageContext.request.contextPath}/resources/images/rdlogotransparent.png" alt="" class="logo">
                       <p>
-                        We are specialized in designings, make your business a brand.
-                        Try our premium services.
+                        We are committed to nurturing the curious minds of young learners and igniting their passion for technology and innovation.
                       </p>
                       <div class="social">
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>                        
                       </div>
+                      
                   </div>
 
 
@@ -48,11 +50,15 @@
                       <h3>Contact</h3>
                       <div class="contact-details">
                          <i class="fa fa-location"></i>
-                         <p>RoboDynamics, above Agarwal Bhavan, Opp. Confident Building, Chembanahalli, <br> Sarjapura road, Bangalore - 562125</p>
+                         <p>RoboDynamics, Opp. Confident Building, Chembanahalli, <br> Sarjapura road, Bangalore - 562125</p>
                       </div>
                       <div class="contact-details">
                          <i class="fa fa-phone"></i>
                          <p>+91 8374377311</p>
+                      </div>
+                      <div class="contact-details">
+                         <i class="fa fa-inbox"></i>
+                         <p>examplemail@gmail.com</p>
                       </div>
                   </div>
             </div>
