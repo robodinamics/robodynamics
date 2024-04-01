@@ -1,8 +1,10 @@
 com\robodynamics\dao\RDUserDao.class
 com\robodynamics\service\impl\RDStudentEnrollmentServiceImpl.class
 com\robodynamics\model\RDAssetCategory.class
+com\robodynamics\service\RDEnquiryService.class
 com\robodynamics\dao\RDAssetItemDao.class
 com\robodynamics\dao\RDCourseOfferingDao.class
+com\robodynamics\dao\RDEnquiryDao.class
 com\robodynamics\service\impl\RDCourseServiceImpl.class
 com\robodynamics\controller\RDStaticController.class
 com\robodynamics\model\RDCourseOffering.class
@@ -19,6 +21,7 @@ com\robodynamics\service\RDStudentEnrollmentService.class
 com\robodynamics\controller\RDStudentEnrollmentController.class
 com\robodynamics\dao\RDAssetCategoryDao.class
 com\robodynamics\model\RDCourse.class
+com\robodynamics\controller\RDCourseMonitorController.class
 com\robodynamics\service\impl\RDCourseOfferingServiceImpl.class
 com\robodynamics\model\RDAssetItem.class
 com\robodynamics\dao\impl\RDUserDaoImpl.class
@@ -43,10 +46,12 @@ com\robodynamics\model\RDAssetTransaction.class
 com\robodynamics\dao\impl\RDCourseCategoryImpl.class
 com\robodynamics\form\RDAssetTransactionForm.class
 com\robodynamics\controller\RDCourseCategoryController.class
+com\robodynamics\model\RDEnquiry.class
 com\robodynamics\dao\impl\RDCourseOfferingDaoImpl.class
 com\robodynamics\service\impl\RDAssetCategoryServiceImpl.class
 com\robodynamics\service\impl\RDAssetServiceImpl.class
 com\robodynamics\model\Event.class
+com\robodynamics\dao\impl\RDEnquiryDaoImpl.class
 com\robodynamics\dao\RDCourseDao.class
 com\robodynamics\model\RDAsset.class
 com\robodynamics\service\RDCourseService.class
@@ -57,9 +62,11 @@ com\robodynamics\model\RDCourseContent.class
 com\robodynamics\form\RDAssetItemForm.class
 com\robodynamics\dao\impl\RDAssetDaoImpl.class
 com\robodynamics\dao\RDStudentEnrollmentDao.class
+com\robodynamics\service\impl\RDEnquiryServiceImpl.class
 com\robodynamics\model\RDAssetResource.class
 com\robodynamics\service\RDUserService.class
 com\robodynamics\form\RDCourseOfferingForm.class
+com\robodynamics\controller\RDEnquiryController.class
 com\robodynamics\dao\impl\RDAssetCategoryDaoImpl.class
 com\robodynamics\model\RDUser$profileType.class
 com\robodynamics\model\RDCourseResource.class

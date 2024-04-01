@@ -39,7 +39,7 @@
       
     
 	<!-- Create Data Source -->
-	<bean
+ 	<bean
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 		name="ds">
 		<property name="driverClassName"
@@ -47,21 +47,9 @@
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/robodynamics_db" />
 		<property name="username" value="root" />
-		<property name="password" value="achalla" />
-	</bean>
-	
-	<!-- <bean
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-		name="ds">
-		<property name="driverClassName"
-			value="com.mysql.jdbc.Driver" />
-		<property name="url"
-			value="jdbc:mysql://robodynamicsdb.cxm04iwiqoae.eu-north-1.rds.amazonaws.com:3306/robodynamics_db" />
-		<property name="username" value="admin" />
-		<property name="password" value="ramakrishna" />
-	</bean> -->
-	
-	
+		<property name="password" value="Jatni@752050" />
+	</bean> 	
+
 	<!-- Local SessionFactory -->
 	<bean
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"

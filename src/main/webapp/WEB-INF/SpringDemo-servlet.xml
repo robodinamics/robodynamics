@@ -45,23 +45,11 @@
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/robodynamics_db" />
-		<property name="username" value="root" />
-		<property name="password" value="achalla" />
-	</bean> 
-	
-<!--	 <bean
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-		name="ds">
-		<property name="driverClassName"
-			value="com.mysql.jdbc.Driver" />
-		<property name="url"
-			value="jdbc:mysql://robodynamicsdb.cxm04iwiqoae.eu-north-1.rds.amazonaws.com:3306/robodynamics_db" />
-		<property name="username" value="admin" />
-		<property name="password" value="ramakrishna" />
-	</bean>
-	-->
-	
+			value="jdbc:mysql://89.116.34.23:3306/robodynamics" />
+		<property name="username" value="mysql" />
+		<property name="password" value="Jatni@752050" />
+	</bean> 	
+
 	<!-- Local SessionFactory -->
 	<bean
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
@@ -96,6 +84,7 @@
 				<value>com.robodynamics.model.RDCourseResource</value>
 				<value>com.robodynamics.model.RDAssetTransaction</value>
 				<value>com.robodynamics.model.RDStudentEnrollment</value>
+				<value>com.robodynamics.model.RDEnquiry</value>
 				
 			</list>
 		</property>
