@@ -21,6 +21,7 @@
 	<main>
 	<section class="hero">
 		<div class="slider">
+<<<<<<< HEAD
 
 
         <div class="list">
@@ -28,6 +29,11 @@
             <div class="item">
                 <img src="${pageContext.request.contextPath}/resources/images/1.png" alt="">
 
+=======
+        <div class="list">
+            <div class="item">
+                <img src="${pageContext.request.contextPath}/resources/images/1.png" alt="">
+>>>>>>> origin/master
                 <div class="content">
                     <div class="title">Robo Dynamics</div>
                     <!-- <div class="type">FLOWER</div> -->
@@ -114,6 +120,7 @@
 
     </div>
     </section>
+<<<<<<< HEAD
     
     <section class="carouselCards">
     <div class="carouselCard_header">
@@ -399,6 +406,111 @@
 	
  
 	<%@ include file="/WEB-INF/views/footer.jsp"%>
+=======
+	<section class="gallery-cont">
+		<h1>Gallery</h1>
+      <div class="wrapper">
+		    <div class="gallery">
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/1.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/2.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/3.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/4.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/2.png" alt=""></span></div>
+		      <div class="image"><span><img src="${pageContext.request.contextPath}/resources/images/3.png" alt=""></span></div>
+		    </div>
+		  </div>
+		  <div class="preview-box">
+		    <div class="details">
+		      <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+		      <span class="icon fas fa-times"></span>
+		    </div>
+		    <div class="image-box">
+		      <div class="slide prev-g"><i class="fas fa-angle-left"></i></div>
+		      <div class="slide next-g"><i class="fas fa-angle-right"></i></div>
+		      <img src="" alt="">
+		    </div>
+		  </div>
+		  <div class="shadow"></div>
+	</section>
+	<section class="video-cont">
+		<h1>Videos</h1>
+		<div class="video-container">
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+			<div class="video"><video src="${pageContext.request.contextPath}/resources/video/video.mp4" ></video></div>
+		</div>
+		
+		<div class="popup-video">
+			<span>&times;</span>
+			<video src="${pageContext.request.contextPath}/resources/video/video.mp4"  autoplay controls></video>
+		</div>
+	</section>	
+	
+	<section class="features">
+		 <div class="row">
+        <h2 class="section-heading">What we offer</h2>
+      </div>
+      <div class="row-feature">
+        <div class="column-feature">
+          <div class="card-feature">
+            <div class="icon-wrapper">
+            <i class="fa-solid fa-cubes-stacked"></i>
+            </div>
+            <h3>LEGOS</h3>
+            <p>
+            	Some text goes here
+            </p>
+          </div>
+        </div>
+        <div class="column-feature">
+          <div class="card-feature">
+            <div class="icon-wrapper">
+            <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3>Drones</h3>
+            <p>
+            	Some text goes here
+            </p>
+          </div>
+        </div>
+        <div class="column-feature">
+          <div class="card-feature">
+            <div class="icon-wrapper">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Robotics</h3>
+            <p>
+              Some text goes here
+            </p>
+          </div>
+        </div>
+       
+      </div>
+	</section>
+    
+    <section class="contact">
+    	<div class="contact-map">
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.4462482038034!2d77.76021401023883!3d12.879001916850108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7309ba85df81%3A0x79e9e7ac13776a2f!2sRobo%20Dynamics!5e0!3m2!1sen!2sin!4v1711717867209!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    	<div class="contact-form">
+    		<h1>Contact Us</h1>
+    		<form>
+    			<input type="text" placeholder="Name" class="contact-form-txt"/>
+    			<input type="email" placeholder="Email" class="contact-form-txt"/>
+    			<textarea placeholder="Message"class="contact-form-txtarea"></textarea>
+    			<input type="submit" name="Submit" class="contact-form-btn"/>
+    		</form>
+    	</div>
+    </section>
+    
+    </main>
+
+ 
+	<%@ include file="/WEB-INF/views/footer.jsp"%>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+>>>>>>> origin/master
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
 	

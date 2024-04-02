@@ -1,187 +1,112 @@
-main {
-	display:flex;
-	flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    background: #0B0C24 !important;
+}
+.font_sarpanch {
+    font-family: "Sarpanch", sans-serif;
+}
+section .about {
+    margin: 5rem 0;
 }
 
-.about-section{
-    background: url(../images/aboutus.png) no-repeat left;
-    background-size: 50%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
+.text-label,
+.text-about-bold,
+.text-about-regular {
+    margin: 24px 0;
+    color: white;
+}
+section .vision {
+    margin: 5rem 0;
 }
 
-.inner-container{
-    width: 55%;
-    float: right;
-    background-color: #f1f1f1;
-    padding: 150px;
+section .mission {
+    margin: 5rem 0;
 }
 
-.inner-container h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
+
+
+.section-team {
+	font-family: "Poppins", sans-serif;
+	padding: 80px 0;
 }
 
-.text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
+.section-team .header-section {
+	margin-bottom: 50px;
 }
 
-.skills{
-    display: flex;
-    justify-content: space-between;
+.section-team .header-section .small-title {
+    margin-bottom: 25px;
+	font-size: 16px;
+    font-weight: 500;
+    color: #3e64ff;
+}
+
+.section-team .header-section .title {
     font-weight: 700;
-    font-size: 13px;
+    font-size: 45px;
 }
 
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
+.section-team .single-person {
+	margin-top: 30px;
+	padding: 30px;
+	background-color: #141535;
+	border-radius: 5px;
+	transition: 0.5s ease;
 }
 
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
+.section-team .single-person:hover {
+	scale: 1.1
 }
 
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
-    }
-    .inner-container{
-        padding: 60px;
-    }
+.section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding .3s;
 }
 
-
-/* OUR MISSION */
-
-.our-mission{
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.section-team .single-person .person-image img {
+	width: 100%;
+    border-radius: 50%;
 }
 
-.our-mission p {
-	text-align: center;
-	padding: 50px;	
+.section-team .single-person .person-image .icon {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #0B0C24;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
 }
 
-
-
-/* OUR MISSION */
-
-.our-vision{
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.section-team .single-person:hover .person-image .icon {
+	background: none;
+	background-color: #fff;
+	color: #016cec;
 }
 
-.our-vision p {
-	text-align: center;
-	padding: 50px;	
-}
-/* Our Team */
-
-
-.Trow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2em 1em;
-  text-align: center;
-}
-.Tcolumn {
-  width: 100%;
-  padding: 0.5em 0;
-}
-.Th1 {
-  width: 100%;
-  text-align: center;
-  font-size: 2em;
-  color: #1f003b;
-}
-.card {
-  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
-  padding: 3.5em 1em;
-  border-radius: 0.6em;
-  color: #1f003b;
-  cursor: pointer;
-  transition: 0.3s;
-  background-color: #ffffff;
-}
-.card .img-container {
-  width: 8em;
-  height: 8em;
-  background-color: #a993ff;
-  padding: 0.5em;
-  border-radius: 50%;
-  margin: 0 auto 2em auto;
-}
-.card img {
-  width: 100%;
-  border-radius: 50%;
-}
-.card h3 {
-  font-weight: 500;
-}
-.card p {
-  font-weight: 300;
-  text-transform: uppercase;
-  margin: 0.5em 0 2em 0;
-  letter-spacing: 2px;
-}
-.icons {
-  width: 50%;
-  min-width: 180px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-.card a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.4em;
-}
-.card:hover {
-  color: #000;
-  transform: translateY(-4px)
-  
-}
-/* .card:hover .img-container {
-  transform: scale(1.15);
-} */
-@media screen and (min-width: 768px) {
-  .our-team {
-    padding: 1em 7em;
-  }
-}
-@media screen and (min-width: 992px) {
-  .our-team {
-    padding: 1em;
-  }
-  .card {
-    padding: 5em 1em;
-  }
-  .Tcolumn {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 0 1em;
-  }
+.section-team .single-person .person-info .full-name {
+	margin-bottom: 10px;
+	font-size: 28px;
+    font-weight: 700;
 }
 
+.section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #016cec;
+}
 
+.section-team .single-person:hover .full-name,
+.section-team .single-person:hover .speciality {
+	color: #fff;
+}

@@ -11,397 +11,277 @@
 <meta name="description" content="">
 <meta name="generator" content="Hugo 0.84.0">
 <title>RoboDynamics | Home</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="${pageContext.request.contextPath}/resources/css/index.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/css/index.css"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+	integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/showHeader.jsp"%>
-	
-	<main>
 	<section class="hero">
-		<div class="slider">
+		<div class="container">
+			<div class="row">
+				<div
+					class="col-md-6 d-flex justify-content-center align-items-center">
+					<div class="copy">
+						<div class="text-label font_sarpanch fs-2 text-center">
+							RoboDynamics</div>
+						<div class="text-hero-bold text-center">Lorem ipsum is
+							placeholder text commonly used in the graphic, print, and
+							publishing industries for previewing layouts and visual mockups.
+						</div>
+						<div class="cta d-flex justify-content-center gap-2">
+							<a href=""
+								class="text-white text-decoration-none px-3 py-2 rounded-4"
+								style="background: #FFB703">Get Started</a> <a href=""
+								class="text-white text-decoration-none px-3 py-2 rounded-4"
+								style="background: #FFB703">Summer Camp!</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<img class="float-lg-end floating"
+						src="${pageContext.request.contextPath}/resources/images/hero-img.png"
+						alt="" width="75%" height="auto">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="counter" style="background: #141535;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mt-5 mb-5 text-center">
+					<img
+						src="${pageContext.request.contextPath}/resources/images/counter.png"
+						width="100%" height="auto" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services py-xl-8">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="header">
+				<h2
+					class="text-white text-center mb-5 lsp font_sarpanch text-uppercase">Services</h2>
+			</div>
+			</div>
+		</div>
+
+		<div class="container overflow-hidden">
+			<div class="row gy-5 gx-md-5 justify-content-center">
+				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
+					<div class="row gy-4">
+						<div class="col-12 col-lg-2">
+							<i class="fa-solid fa-robot fs-3 text-primary"></i>
+						</div>
+						<div class="col-12 col-lg-10 ">
+							<h4 class="mb-3 text-white">Robotics</h4>
+							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
+								blandit lacinia, nisi velit posuere nisl, vel placerat magna
+								mauris mollis maximus est.</p>
+							<div>
+								<a href="#!" class="fw-bold text-decoration-none link-primary">
+									Learn More <i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-10 col-md-5 col-xl-4 overflow-hidden ">
+					<div class="row gy-4">
+						<div class="col-12 col-lg-2">
+							<i class="fa-solid fa-cube fs-3 text-primary"></i>
+						</div>
+						<div class="col-12 col-lg-10">
+							<h4 class="mb-3 text-white">Legos</h4>
+							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
+								blandit lacinia, nisi velit posuere nisl, vel placerat magna
+								mauris mollis maximus est.</p>
+							<div>
+								<a href="#!" class="fw-bold text-decoration-none link-primary">
+									Learn More <i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
+					<div class="row gy-4">
+						<div class="col-12 col-lg-2">
+							<i class="fa-solid fa-pen-nib fs-3 text-primary"></i>
+						</div>
+						<div class="col-12 col-lg-10">
+							<h4 class="mb-3 text-white">Graphic Designing</h4>
+							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
+								blandit lacinia, nisi velit posuere nisl, vel placerat magna
+								mauris mollis maximus est.</p>
+							<div>
+								<a href="#!" class="fw-bold text-decoration-none link-primary">
+									Learn More <i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
+					<div class="row gy-4">
+						<div class="col-12 col-lg-2">
+							<i class="fa-solid fa-gamepad fs-3 text-primary"></i>
+						</div>
+						<div class="col-12 col-lg-10">
+							<h4 class="mb-3 text-white">Drones</h4>
+							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
+								blandit lacinia, nisi velit posuere nisl, vel placerat magna
+								mauris mollis maximus est.</p>
+							<div>
+								<a href="#!" class="fw-bold text-decoration-none link-primary">
+									Learn More <i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
+					<div class="row gy-4">
+						<div class="col-12 col-lg-2">
+							<i class="fa-solid fa-print fs-3 text-primary"></i>
+						</div>
+						<div class="col-12 col-lg-10">
+							<h4 class="mb-3 text-white">3D Pens</h4>
+							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
+								blandit lacinia, nisi velit posuere nisl, vel placerat magna
+								mauris mollis maximus est.</p>
+							<div>
+								<a href="#!" class="fw-bold text-decoration-none link-primary">
+									Learn More <i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
+					<div class="row gy-4">
+						<div class="col-12 col-lg-2">
+							<i class="fa-solid fa-code fs-3 text-primary"></i>
+						</div>
+						<div class="col-12 col-lg-10">
+							<h4 class="mb-3 text-white">Coding</h4>
+							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
+								blandit lacinia, nisi velit posuere nisl, vel placerat magna
+								mauris mollis maximus est.</p>
+							<div>
+								<a href="#!" class="fw-bold text-decoration-none link-primary">
+									Learn More <i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="gallery min-vh-100">
+			<div class="header">
+				<h2
+					class="text-white text-center mb-5 lsp font_sarpanch text-uppercase">Gallery</h2>
+			</div>
+			<div class="container-lg">
+				<div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+					<div class="col">
+						<img
+							src="${pageContext.request.contextPath}/resources/images/1.png"
+							class="gallery-item" alt="gallery">
+					</div>
+					<div class="col">
+						<img
+							src="${pageContext.request.contextPath}/resources/images/5.png"
+							class="gallery-item" alt="gallery">
+					</div>
+					<div class="col">
+						<img
+							src="${pageContext.request.contextPath}/resources/images/4.png"
+							class="gallery-item" alt="gallery">
+					</div>
+					<div class="col">
+						<img
+							src="${pageContext.request.contextPath}/resources/images/3.png"
+							class="gallery-item" alt="gallery">
+					</div>
+					<div class="col">
+						<img
+							src="${pageContext.request.contextPath}/resources/images/2.png"
+							class="gallery-item" alt="gallery">
+					</div>
+					<div class="col">
+						<img
+							src="${pageContext.request.contextPath}/resources/images/1.png"
+							class="gallery-item" alt="gallery">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal -->
+		<div class="modal fade" id="gallery-modal" tabindex="-1"
+			aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Gallery</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<img src="img/1.jpg" class="modal-img" alt="modal img">
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-        <div class="list">
-
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/1.png" alt="">
-
-                <div class="content">
-                    <div class="title">Robo Dynamics</div>
-                    <!-- <div class="type">FLOWER</div> -->
-                    <div class="description">
-						At Robo Dynamics, we are committed to nurturing the curious minds of young learners and igniting their passion for technology and innovation. As a premier robotics training institute tailored for kids, we provide a encourages creativity, critical thinking, and hands-on exploration.
-                    </div>
-                    <div class="button">
-                        <button>SEE MORE</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/2.png" alt="">
-
-                <div class="content">
-                    <div class="title">Our Vision</div>
-                    <!-- <div class="type">NATURE</div> -->
-                    <div class="description">
-                        At Robo-Dynamcis , our vision is to be a beacon of inspiration and education for young minds aged 7 to 15, fostering a generation of future-ready innovators who possess the skills, knowledge, and confidence to thrive in an increasingly technology-driven world.
-                    </div>
-                    <div class="button">
-                        <button>SEE MORE</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/3.png" alt="">
-
-                <div class="content">
-                    <div class="title">Our Mission</div>
-                    <!-- <div class="type">PLANT</div> -->
-                    <div class="description">
-                    	Our mission is to inspire the next generation of innovators problem solvers. We believe that every child has unique talents waiting to be unlocked. Through our diverse we develop coding, robotics, drones, 3D printing, an that celebrates curiosity, allowing children to dream big and pursue their interest.   
-                    </div>
-                    <div class="button hideBtn">
-                        <button>SEE MORE</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/4.png" alt="">
-
-                <div class="content">
-                    <div class="title">Our Offerings</div>
-                    <!-- <div class="type">NATURE</div> -->
-                    <div class="description">
-                    	At Robo Dynamics, we offer a wide spectrum of engaging and educational programs designed to cater to various interests and skill levels: Coding, Drones, Robotics and much more!	
-                    </div>
-                    <div class="button">
-                        <button>SEE MORE</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+		<section class="contact">
+			<h3 class="lsp text-white text-center font_sarpanch text-uppercase">GET
+				IN TOUCH</h3>
+			<div class="contact-container">
+				<!-- form -->
+				<div class="form-container">
+					<h3>Message Us</h3>
+					<form action="" class="contact-form">
+						<input type="text" placeholder="Name" required> <input
+							type="email" placeholder="Enter your email" required>
+						<textarea name="" id="" cols="30" rows="10"
+							placeholder="Leave a message" required></textarea>
+						<input type="submit" value="Send" class="send-btn">
+					</form>
+				</div>
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.4462482038034!2d77.76021401023883!3d12.879001916850108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7309ba85df81%3A0x79e9e7ac13776a2f!2sRobo%20Dynamics!5e0!3m2!1sen!2sin!4v1711802750387!5m2!1sen!2sin"
+						style="border: 0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
 
 
-        <div class="thumbnail">
 
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/1.png" alt="">
-            </div>
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/2.png" alt="">
-            </div>
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/3.png" alt="">
-            </div>
-            <div class="item">
-                <img src="${pageContext.request.contextPath}/resources/images/4.png" alt="">
-            </div>
-
-        </div>
-
-
-        <div class="nextPrevArrows">
-            <button class="prev"> < </button>
-            <button class="next"> > </button>
-        </div>
-
-
-    </div>
-    </section>
-    
-    <section class="carouselCards">
-    <div class="carouselCard_header">
-    	<h1>Robotics</h1>
-    	<p>Lorem ipsum</p>
-    </div>
-	    <div class="slide-container swiper">
-	            <div class="slide-content">
-	                <div class="card-wrapper swiper-wrapper">
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/1.png" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <!--<img src="images/profile5.jpg" alt="" class="card-img">-->
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <!--<img src="images/profile6.jpg" alt="" class="card-img">-->
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <!--<img src="images/profile7.jpg" alt="" class="card-img">-->
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <!--<img src="images/profile8.jpg" alt="" class="card-img">-->
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <!--<img src="images/profile9.jpg" alt="" class="card-img">-->
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="swiper-button-next swiper-navBtn"></div>
-	            <div class="swiper-button-prev swiper-navBtn"></div>
-	            <div class="swiper-pagination"></div>
-	        </div>
-    </section>
-     <section class="carouselCards">
-    <div class="carouselCard_header">
-    	<h1>Coding</h1>
-    	<p>Lorem ipsum</p>
-    </div>
-	    <div class="slide-container swiper">
-	            <div class="slide-content">
-	                <div class="card-wrapper swiper-wrapper">
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/r1.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/r3.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/r3.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/r4.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">David Dell</h2>
-	                            <p class="cDescription">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="swiper-button-next swiper-navBtn"></div>
-	            <div class="swiper-button-prev swiper-navBtn"></div>
-	            <div class="swiper-pagination"></div>
-	        </div>
-    </section>
-    <section class="carouselCards">
-    <div class="carouselCard_header">
-    	<h1>Legos</h1>
-    	<p>At RoboDynamics we provide a wide range of lego sets to choose from</p>
-    </div>
-	    <div class="slide-container swiper">
-	            <div class="slide-content">
-	                <div class="card-wrapper swiper-wrapper">
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/lego1.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                           
-	                            <h2 class="name">LEGO Lamborghini Countach </h2>
-	                            <p class="cDescription">Lego Speed Champions Lamborghini Countach 76908 Building Kit (262 Pcs),Multicolor</p>
-	                           <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/lego2.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">LEGO Chevrolet Corvette</h2>
-	                            <p class="cDescription">Lego speed Champions Chevrolet Corvette C8.R Race Car&1968 Chevrolet Corvette 76903 Building Kit (512 Pcs),Multicolor</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/lego3.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">LEGO Technic Teleh&ler 42133 </h2>
-	                            <p class="cDescription">LEGO Technic Teleh&ler 42133 Model Building Kit (143 Pcs),Multicolor</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/lego4.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">LEGO Technic Snow Groomer</h2>
-	                            <p class="cDescription">LEGO Technic Snow Groomer 42148 Building Toy Set (178 Pcs),Multicolor</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                    <div class="card swiper-slide">
-	                        <div class="image-content">
-	                            <span class="overlay"></span>
-	                            <div class="card-image">
-	                                <img src="${pageContext.request.contextPath}/resources/images/lego5.avif" alt="" class="card-img">
-	                            </div>
-	                        </div>
-	                        <div class="card-content">
-	                            <h2 class="name">LEGO Creator 3in1 Super Robot</h2>
-	                            <p class="cDescription">LEGO Creator 3in1 Super Robot 31124 Building Kit (159 Pcs),Multicolor</p>
-	                            <button class="cButton">View More</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="swiper-button-next swiper-navBtn"></div>
-	            <div class="swiper-button-prev swiper-navBtn"></div>
-	            <div class="swiper-pagination"></div>
-	        </div>
-    </section>
-	</main>
-	
- 
-	<%@ include file="/WEB-INF/views/footer.jsp"%>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
-	
-
+		<%@ include file="/WEB-INF/views/footer.jsp"%>
+		<script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
 </body>
 </html>

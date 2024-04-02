@@ -1,44 +1,66 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
+<%@ page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="generator" content="Hugo 0.84.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="${pageContext.request.contextPath}/resources/css/navbar.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <c:set var="user" value="${sessionScope.rdUser}" />
- <header> 
-	<div class=navbar>
-		<div class=logo>
-			<img src="${pageContext.request.contextPath}/resources/images/rdlogotransparent.png" alt="RoboDynamics"/>
-		</div>
-		<ul class=links>
-			<li><a href="${pageContext.request.contextPath}">Home</a></li>
-			<li><a href='<c:url value="/aboutus"></c:url>'>About</a></li>
-			<li><a href='<c:url value="membership"></c:url>'>Membership</a></li>
-		</ul>
-		<div class="action_btns">
-			<a href="${pageContext.request.contextPath}/parent/register" class="action_btn">Sign Up</a>
-			<a href="${pageContext.request.contextPath}/login" class="action_btn">Login</a>
-		</div>
-		<div class="toggle_btn">
-			<i class="fa-solid fa-bars"></i>
-		</div>
-	</div>
-	
-	
-	<div class="dropdown_menu">
-		<li><a href="${pageContext.request.contextPath}">Home</a></li>
-		<li><a href='<c:url value="/aboutus"></c:url>'>About</a></li>
-		<li><a href='<c:url value="/membership"></c:url>'>Membership</a></li>
-		<li><a href="${pageContext.request.contextPath}/parent/register" class="action_btn">Sign Up</a></li>
-		<li><a href="${pageContext.request.contextPath}/login" class="action_btn">Login</a></li>
-	</div>
- </header>
- <script src="${pageContext.request.contextPath}/resources/js/navbar.js"></script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <!-- <a class="navbar-brand fs-4" href="#">RoboDynamics</a> -->
+        <a class="navbar-brand" href="#">
+          <img src="${pageContext.request.contextPath}/resources/images/logo.png" alt="" width="150" height="50">
+        </a>    
+        <!-- Toggle Button -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- SideBar -->
+        <div class="sidebar offcanvas offcanvas-start" style="background: #0B0C24;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+          <!--  SideBar Header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">RoboDynamics</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- SideBar Body -->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2 text-white">
+                <a class="nav-link" aria-current="page" href="${pageContext.request.contextPath}/">Home</a>
+              </li>
+              <li class="nav-item mx-2 text-white">
+                <a class="nav-link" href="${pageContext.request.contextPath}/aboutus">About</a>
+              </li>
+              <li class="nav-item mx-2 text-white">
+                <a class="nav-link" href="${pageContext.request.contextPath}/membership">Membership</a>
+              </li>
+            </ul>
+            <!-- Login/Signup -->
+            <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+              <a href="${pageContext.request.contextPath}/parent/register" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background: #FFB703">Sign Up</a>
+              <a href="${pageContext.request.contextPath}/login" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background: #FFB703">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
 

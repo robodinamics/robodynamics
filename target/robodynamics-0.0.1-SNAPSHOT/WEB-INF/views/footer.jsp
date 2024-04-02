@@ -15,8 +15,12 @@
                   <div class="col" id="company">
                       <img src="${pageContext.request.contextPath}/resources/images/rdlogotransparent.png" alt="" class="logo">
                       <p>
+<<<<<<< HEAD
                         We are specialized in designings, make your business a brand.
                         Try our premium services.
+=======
+                        We are committed to nurturing the curious minds of young learners and igniting their passion for technology and innovation.
+>>>>>>> origin/master
                       </p>
                       <div class="social">
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -48,7 +52,11 @@
                       <h3>Contact</h3>
                       <div class="contact-details">
                          <i class="fa fa-location"></i>
+<<<<<<< HEAD
                          <p>RoboDynamics, above Agarwal Bhavan, Opp. Confident Building, Chembanahalli, <br> Sarjapura road, Bangalore - 562125</p>
+=======
+                         <p>RoboDynamics, Opp. Confident Building, Chembanahalli, <br> Sarjapura road, Bangalore - 562125</p>
+>>>>>>> origin/master
                       </div>
                       <div class="contact-details">
                          <i class="fa fa-phone"></i>
