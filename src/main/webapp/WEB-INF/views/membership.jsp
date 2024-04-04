@@ -24,6 +24,10 @@
    <%@ include file="/WEB-INF/views/showHeader.jsp" %>
 
      <section>
+     <div class="d-flex justify-content-center align-items-center flex-column">
+     	<h1 class="font-bold text-white font_sarpanch">Pick what best suits you.</h1>
+     	<p class="font_sarpanch text-white">Your Child's Curiosity Matters!</p>
+     </div>
       <center>
         <div class="pricing pricing-palden">
             <div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
@@ -40,17 +44,13 @@
                     <h3 class="pricing-title font_sarpanch">Young Innovators</h3>
                 </div>
                 <ul class="pricing-feature-list">
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>1 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $25/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Limited cloud access</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>10 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $5/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Full cloud access</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>10 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $5/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Full cloud access</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Beginner Robotics</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>3D Pen</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Scratch Programming</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Drone Workshop</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Legos</li>
                 </ul>
-                <button class="pricing-action">Choose plan</button>
+                <button class="pricing-action">Subscribe</button>
             </div>
             <div class="pricing-item features-item ja-animate pricing__item--featured" data-animation="move-from-bottom" data-delay="item-1" style="min-height: 497px;">
                 <div class="pricing-deco" style="background: linear-gradient(135deg,#a93bfe,#584efd)">
@@ -66,17 +66,13 @@
                     <h3 class="pricing-title font_sarpanch">Future Innovators</h3>
                 </div>
                 <ul class="pricing-feature-list">
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>5 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $5/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Full cloud access</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>10 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $5/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Full cloud access</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>10 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $5/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Full cloud access</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Robotics</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Drone Workshop</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Legos</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Programming Languages</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>3D Printing</li>
                 </ul>
-                <button class="pricing-action">Choose plan</button>
+                <button class="pricing-action">Subscribe</button>
             </div>
             <div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-2" style="min-height: 497px;">
                 <div class="pricing-deco">
@@ -92,18 +88,14 @@
                     <h3 class="pricing-title font_sarpanch">Programmers Hub</h3>
                 </div>
                 <ul class="pricing-feature-list">
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>10 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $5/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Full cloud access</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>10 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $5/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Full cloud access</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>10 GB of space</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Support at $5/hour</li>
-                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Full cloud access</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Scratch Programming</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>C Programming</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Python Programming</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Java</li>
+                    <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i>Web Development</li>
                     
                 </ul>
-                <button class="pricing-action">Choose plan</button>
+                <button class="pricing-action">Subscribe</button>
             </div>
         </div>
     </section>

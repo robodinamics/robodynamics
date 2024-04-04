@@ -2,6 +2,7 @@
 
 body {
     background: #0B0C24 !important;
+    overflow-x: hidden !important;
 }
 section .hero {
     margin: 5rem 0;
@@ -56,6 +57,11 @@ img{
     letter-spacing: 20px;
 }
 
+
+
+.gallery-img  img{
+	object-fit: cover;
+}
 
 
 .contact {
@@ -140,4 +146,65 @@ img{
 
 .services {
 	margin-top: 50px;
+}
+
+
+.reviews {
+	height: auto;
+	
+    overflow-x: hidden !important;
+}
+
+.testimonial-slider {
+  background-color: #5072a7;
+  padding: 3em 2em;
+}
+.testimonial-title {
+  color: #fff;
+}
+.testimonial-title h2 {
+  padding-left: 0.2em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #fff;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    left: 1em;
+    top: 90%;
+    opacity: 1;
+  }
+  .carousel-control-next {
+    left: 4.5em;
+  }
 }

@@ -63,7 +63,7 @@ section {
 .pricing-palden .pricing-item {
     font-family: 'Open Sans', sans-serif;
     cursor: default;
-    color: #84697c;
+    color: #000;
     background: #fff;
     box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
     border-radius: 20px 20px 10px 10px;
@@ -153,7 +153,7 @@ section {
     margin: 0;
     padding: 0.25em 0 2.5em;
     list-style: none;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .pricing-palden .pricing-feature-list i{
@@ -170,14 +170,16 @@ section {
     padding: 1em 2em;
     color: #fff;
     border-radius: 30px;
-    background: linear-gradient(135deg,#a93bfe,#584efd);
+/*     background: linear-gradient(135deg,#a93bfe,#584efd); */
+	background: #8045fd;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
 .pricing-palden .pricing-action:hover,
 .pricing-palden .pricing-action:focus {
-    background: linear-gradient(135deg,#fd7d57,#f55d59);
+	background: #8045fd;
+    /* background: linear-gradient(135deg,#fd7d57,#f55d59); */
 }
 
 .pricing-palden .pricing-item--featured .pricing-deco {

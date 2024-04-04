@@ -28,46 +28,82 @@
 <body>
 	<%@ include file="/WEB-INF/views/showHeader.jsp"%>
 	<section class="hero">
-		<div class="container">
+		<div class="container vh-100">
 			<div class="row">
 				<div
 					class="col-md-6 d-flex justify-content-center align-items-center">
 					<div class="copy">
-						<div class="text-label font_sarpanch fs-2 text-center">
-							RoboDynamics</div>
-						<div class="text-hero-bold text-center">Lorem ipsum is
-							placeholder text commonly used in the graphic, print, and
-							publishing industries for previewing layouts and visual mockups.
+						<div class="text-label font_sarpanch fs-2 text-left">
+							Looking for A Summer Camp?</div>
+						<div class="text-hero-bold text-left">Gear up for an electrifying summer at RoboDynamics where young heroes engineer their way to fun-filled days, igniting imaginations and learning skills that will last a lifetime!
+						<br />
+						<br />
+						Click the button below to Sign Up before its too late!
 						</div>
-						<div class="cta d-flex justify-content-center gap-2">
-							<a href=""
+						<div class="cta d-flex justify-content-left">
+							<!-- <a href=""
 								class="text-white text-decoration-none px-3 py-2 rounded-4"
-								style="background: #FFB703">Get Started</a> <a href=""
-								class="text-white text-decoration-none px-3 py-2 rounded-4"
-								style="background: #FFB703">Summer Camp!</a>
+								style="background: #FFB703">Get Started</a> -->
+								 <a href=""
+								class="text-white text-decoration-none px-3 py-2 rounded-2 btn btn-primary">Summer Camp!</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<img class="float-lg-end floating"
-						src="${pageContext.request.contextPath}/resources/images/hero-img.png"
+				<div class="col-md-6 d-flex justify-content-center align-items-center">
+					<img class="float-lg-end rounded-5"
+						src="${pageContext.request.contextPath}/resources/images/summerimg.png"
 						alt="" width="75%" height="auto">
 				</div>
 			</div>
-		</div>
 	</section>
-
-	<section class="counter" style="background: #141535;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 mt-5 mb-5 text-center">
-					<img
-						src="${pageContext.request.contextPath}/resources/images/counter.png"
-						width="100%" height="auto" alt="">
-				</div>
-			</div>
 		</div>
-	</section>
+	<section class="counter" style="background: #141535; margin-top: 50px;">
+      <div class="container-fluid py-4">
+        <div class="row gx-5">
+          <div class="col-md-3">
+            <div class="counter-box text-center mt-sm-2">
+              <div class="counter-value text-white fs-4">50+</div>
+              <div class="counter-label text-warning fs-5">Students</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="counter-box text-center mt-sm-2">
+              <div class="counter-value text-white fs-4">80+</div>
+              <div class="counter-label text-warning fs-5">Courses</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="counter-box text-center mt-sm-2">
+              <div class="counter-value text-white fs-4">40+</div>
+              <div class="counter-label text-warning fs-5">Projects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<section class="whyus" style="margin-top: 50px;">
+		      <div class="header">
+		        <h2 class="text-white text-center mb-5 lsp font_sarpanch text-uppercase">Why Choose RoboDynamics</h2>
+		      </div>
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-md-6">
+		            <img class="float-lg-start" src="${pageContext.request.contextPath}/resources/images/1.png" alt="" width="100%" height="auto">
+		          </div>
+		          <div class="col-md-6 d-flex justify-content-start align-items-center">
+		            <div class="copy">
+		              <!-- <div class="text-label font_sarpanch fs-2 text-center">
+		                RoboDynamics
+		              </div> -->
+		              <div class="text-hero-bold text-center">  
+							At Robo Dynamics, we offer a specialized educational experience tailored for children aged 7 to 15, fostering creativity, critical thinking, and hands-on exploration. Our comprehensive curriculum covers coding, robotics, drones, 3D printing, and more, providing a diverse array of opportunities for young learners to discover and pursue their passions. With experienced instructors guiding them, children are empowered to unlock their full potential and thrive in an ever-evolving technological landscape. Our mission is to ignite the spark of innovation and problem-solving in every child, preparing them for success in the future. At Robo Dynamics, imagination knows no bounds, and the possibilities are endless for every young mind who joins us on this exciting journey of discovery and growth.
+		              </div>
+		            </div>
+		          </div> 
+		        </div>
+		      </div>
+		    </section>
 
 	<section class="services py-xl-8">
 		<div class="container">
@@ -84,13 +120,11 @@
 				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
 					<div class="row gy-4">
 						<div class="col-12 col-lg-2">
-							<i class="fa-solid fa-robot fs-3 text-primary"></i>
+							<i class="fa-solid fa-robot fs-3 text-white"></i>
 						</div>
 						<div class="col-12 col-lg-10 ">
 							<h4 class="mb-3 text-white">Robotics</h4>
-							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
-								blandit lacinia, nisi velit posuere nisl, vel placerat magna
-								mauris mollis maximus est.</p>
+							<p class="mb-3 text-white">From Ages 9-14 for Future Innovators. In this program you would get a basic interface of projects on sensors.</p>
 							<div>
 								<a href="#!" class="fw-bold text-decoration-none link-primary">
 									Learn More <i class="fa-solid fa-arrow-right"></i>
@@ -102,13 +136,11 @@
 				<div class="col-10 col-md-5 col-xl-4 overflow-hidden ">
 					<div class="row gy-4">
 						<div class="col-12 col-lg-2">
-							<i class="fa-solid fa-cube fs-3 text-primary"></i>
+							<i class="fa-solid fa-cube fs-3 text-white"></i>
 						</div>
 						<div class="col-12 col-lg-10">
 							<h4 class="mb-3 text-white">Legos</h4>
-							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
-								blandit lacinia, nisi velit posuere nisl, vel placerat magna
-								mauris mollis maximus est.</p>
+							<p class="mb-3 text-white">At RoboDynamics we have around 45+ lego sets for unlimited building hours. Book your Lego sets now.</p>
 							<div>
 								<a href="#!" class="fw-bold text-decoration-none link-primary">
 									Learn More <i class="fa-solid fa-arrow-right"></i>
@@ -120,13 +152,11 @@
 				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
 					<div class="row gy-4">
 						<div class="col-12 col-lg-2">
-							<i class="fa-solid fa-pen-nib fs-3 text-primary"></i>
+							<i class="fa-solid fa-pen-nib fs-3 text-white"></i>
 						</div>
 						<div class="col-12 col-lg-10">
 							<h4 class="mb-3 text-white">Graphic Designing</h4>
-							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
-								blandit lacinia, nisi velit posuere nisl, vel placerat magna
-								mauris mollis maximus est.</p>
+							<p class="mb-3 text-white">Our program combines the principles of design with innovative tools to create visually compelling content using Canva.</p>
 							<div>
 								<a href="#!" class="fw-bold text-decoration-none link-primary">
 									Learn More <i class="fa-solid fa-arrow-right"></i>
@@ -138,13 +168,11 @@
 				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
 					<div class="row gy-4">
 						<div class="col-12 col-lg-2">
-							<i class="fa-solid fa-gamepad fs-3 text-primary"></i>
+							<i class="fa-solid fa-gamepad fs-3 text-white"></i>
 						</div>
 						<div class="col-12 col-lg-10">
 							<h4 class="mb-3 text-white">Drones</h4>
-							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
-								blandit lacinia, nisi velit posuere nisl, vel placerat magna
-								mauris mollis maximus est.</p>
+							<p class="mb-3 text-white">Robodynamics has a certified drone expert who teaches the basic principles of drones and have a clear idea of building drones</p>
 							<div>
 								<a href="#!" class="fw-bold text-decoration-none link-primary">
 									Learn More <i class="fa-solid fa-arrow-right"></i>
@@ -156,13 +184,11 @@
 				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
 					<div class="row gy-4">
 						<div class="col-12 col-lg-2">
-							<i class="fa-solid fa-print fs-3 text-primary"></i>
+							<i class="fa-solid fa-print fs-3 text-white"></i>
 						</div>
 						<div class="col-12 col-lg-10">
 							<h4 class="mb-3 text-white">3D Pens</h4>
-							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
-								blandit lacinia, nisi velit posuere nisl, vel placerat magna
-								mauris mollis maximus est.</p>
+							<p class="mb-3 text-white">We provide a wide catalogue of models and 3D Pens to turn your dreams into reality</p>
 							<div>
 								<a href="#!" class="fw-bold text-decoration-none link-primary">
 									Learn More <i class="fa-solid fa-arrow-right"></i>
@@ -174,13 +200,11 @@
 				<div class="col-10 col-md-5 col-xl-4 overflow-hidden">
 					<div class="row gy-4">
 						<div class="col-12 col-lg-2">
-							<i class="fa-solid fa-code fs-3 text-primary"></i>
+							<i class="fa-solid fa-code fs-3 text-white"></i>
 						</div>
 						<div class="col-12 col-lg-10">
 							<h4 class="mb-3 text-white">Coding</h4>
-							<p class="mb-3 text-white">Vestibulum bibendum, lorem a
-								blandit lacinia, nisi velit posuere nisl, vel placerat magna
-								mauris mollis maximus est.</p>
+							<p class="mb-3 text-white">We teach the basics of Python, C, C++, Java and Web Development</p>
 							<div>
 								<a href="#!" class="fw-bold text-decoration-none link-primary">
 									Learn More <i class="fa-solid fa-arrow-right"></i>
@@ -191,7 +215,9 @@
 				</div>
 			</div>
 		</div>
+		</section>
 
+		
 		<section class="gallery min-vh-100">
 			<div class="header">
 				<h2
@@ -199,34 +225,34 @@
 			</div>
 			<div class="container-lg">
 				<div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-					<div class="col">
+					<div class="col h-100 gallery-img">
 						<img
-							src="${pageContext.request.contextPath}/resources/images/1.png"
+							src="${pageContext.request.contextPath}/resources/images/gallery1.jpeg"
 							class="gallery-item" alt="gallery">
 					</div>
-					<div class="col">
+					<div class="col h-100 gallery-img">
 						<img
-							src="${pageContext.request.contextPath}/resources/images/5.png"
+							src="${pageContext.request.contextPath}/resources/images/gallery2.jpeg"
 							class="gallery-item" alt="gallery">
 					</div>
-					<div class="col">
+					<div class="col h-100 gallery-img">
 						<img
-							src="${pageContext.request.contextPath}/resources/images/4.png"
+							src="${pageContext.request.contextPath}/resources/images/gallery3.jpeg"
 							class="gallery-item" alt="gallery">
 					</div>
-					<div class="col">
+					<div class="col h-100 gallery-img">
 						<img
-							src="${pageContext.request.contextPath}/resources/images/3.png"
+							src="${pageContext.request.contextPath}/resources/images/gallery4.jpeg"
 							class="gallery-item" alt="gallery">
 					</div>
-					<div class="col">
+					<div class="col h-100 gallery-img">
 						<img
-							src="${pageContext.request.contextPath}/resources/images/2.png"
+							src="${pageContext.request.contextPath}/resources/images/gallery5.jpeg"
 							class="gallery-item" alt="gallery">
 					</div>
-					<div class="col">
+					<div class="col h-100 gallery-img">
 						<img
-							src="${pageContext.request.contextPath}/resources/images/1.png"
+							src="${pageContext.request.contextPath}/resources/images/gallery6.png"
 							class="gallery-item" alt="gallery">
 					</div>
 				</div>
@@ -249,9 +275,77 @@
 				</div>
 			</div>
 		</div>
+		
+		 <section class="reviews mx-4">
+        <div class="header">
+          <h2 class="text-white text-center mb-5 lsp font_sarpanch text-uppercase">Hear From Others</h2>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card h-100 border-primary border-2 mb-3 bg-transparent text-white">
+                <div class="card-body">
+                  <div class="info-area d-flex flex-column">
+                    <div class="card-img d-flex flex-row align-items-center">
+                      <img src="https://lh3.googleusercontent.com/a-/ALV-UjUU22Da-jnmIuZgtSRVIZhB472jvHoxVn5IZ2jcuJdkaTA=w75-h75-p-rp-mo-ba3-br100" width="100px" height="100px" style="border-radius: 50%;" alt="">
+                      <div class="rating d-flex flex-column mx-2">
+                        <h5 class="card-title">Meghana Naidu</h5>
+                        <div class="number" style="font-size: 0.8rem;"><i class="fa-solid fa-star text-warning"></i> 5.0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text">Many hours of Lego free play plus getting to unbox a bunch of new sets, Robo Dynamics is a dream come True for my child! After our first visit, we quickly realised that we'll be spending a lot of time here, the monthly subscription is perfect for us.
+
+                    Trying out the 3d pen was a lot of fun for me too!
+                    
+                    Looking forward to exploring scratch coding and drones in the months to come.</p>
+                  <a href="https://g.co/kgs/sqtDLwR" target="_blank" class="text-decoration-none float-end" style="font-size: 0.9rem;">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card h-100 border-primary border-2 mb-3 bg-transparent text-white">
+                <div class="card-body">
+                  <div class="info-area d-flex flex-column ">
+                    <div class="card-img d-flex flex-row align-items-center">
+                      <img src="${pageContext.request.contextPath}/resources/images/default.jpg" width="100px" height="100px" style="border-radius: 50%;" alt="">
+                      <div class="rating d-flex flex-column mx-2">
+                        <h5 class="card-title">Pooja Garg</h5>
+                        <div class="number" style="font-size: 0.8rem;"><i class="fa-solid fa-star text-warning"></i> 5.0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text">It's been two months since my child, Atharv, started going to Robo Dynamics classes. I can see a huge change in him—in terms of getting focused, critical, and creative thinking, improving concentration, learning patience with the help of Legos and other building and construction materials and tools, etc. He just loves going to Robo Dynamics. I found a happy place for my child where he learns with fun.</p>
+                  <a href="https://g.co/kgs/f8tG3r2" class="text-decoration-none float-end" style="font-size: 0.9rem;">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card h-100 border-primary border-2 mb-3 bg-transparent text-white">
+                <div class="card-body">
+                  <div class="info-area d-flex flex-column ">
+                    <div class="card-img d-flex flex-row align-items-center">
+                      <img src="${pageContext.request.contextPath}/resources/images/default.jpg" width="100px" height="100px" style="border-radius: 50%;" alt="">
+                      <div class="rating d-flex flex-column mx-2">
+                        <h5 class="card-title">Rahul Agarwal</h5>
+                        <div class="number" style="font-size: 0.8rem;"><i class="fa-solid fa-star text-warning"></i> 5.0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text">Amazing place for lego and innovations..must say Ramakrishna has very good knowledge and interest to build this place as a foundation for kids to explore tech.
+
+                    Very pocket friendly and worth for kids to engage and have a great learning time. Better alternative then watching TV</p>
+                  <a href="https://g.co/kgs/1sA77v5" class="text-decoration-none float-end" style="font-size: 0.9rem;">Explore More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+	
 
 
-		<section class="contact">
+		<section class="contact mt-4">
 			<h3 class="lsp text-white text-center font_sarpanch text-uppercase">GET
 				IN TOUCH</h3>
 			<div class="contact-container">
@@ -278,10 +372,13 @@
 
 
 		<%@ include file="/WEB-INF/views/footer.jsp"%>
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"></script>
+			
+			
 </body>
 </html>

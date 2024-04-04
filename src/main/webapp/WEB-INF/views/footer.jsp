@@ -58,7 +58,7 @@
                       </div>
                       <div class="contact-details">
                          <i class="fa fa-inbox"></i>
-                         <p>examplemail@gmail.com</p>
+                         <p>ramakrishna@robodynamics.in</p>
                       </div>
                   </div>
             </div>

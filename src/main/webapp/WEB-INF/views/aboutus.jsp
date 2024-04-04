@@ -31,8 +31,8 @@
 					<div class="copy mt-5">
 						<div class="text-label font_sarpanch fs-2 text-start mt-3">
 							About Us</div>
-						<div class="text-about-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. Integer vitae justo eget magna fermentum iaculis eu non diam. Tristique senectus et netus et malesuada fames ac turpis egestas. Consequat semper viverra nam libero justo laoreet sit amet. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. 
-						</div>
+						<div class="text-about-bold">
+Welcome to Robo Dynamics, where we are dedicated to cultivating the inquisitive spirits of young learners and kindling their love for technology and innovation. As a leading robotics training institute designed specifically for children, we foster an environment that champions creativity, critical thinking, and hands-on exploration. At Robo Dynamics, we believe in empowering the next generation of innovators by providing them with the tools, guidance, and inspiration they need to thrive in an ever-evolving technological landscape. Join us on an exciting journey of discovery and growth, where imagination knows no bounds and the possibilities are endless.</div>
 						<!-- <div class="cta d-flex justify-content-center gap-2">
 							<a href=""
 								class="text-white text-decoration-none px-3 py-2 rounded-4"
@@ -62,8 +62,7 @@
 					class="col-md-6 d-flex justify-content-center align-items-center">
 					<div class="copy mt-5">
 						<div class="text-label font_sarpanch fs-2 text-start mt-3">Our Vision</div>
-						<div class="text-about-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. Integer vitae justo eget magna fermentum iaculis eu non diam. Tristique senectus et netus et malesuada fames ac turpis egestas. Consequat semper viverra nam libero justo laoreet sit amet. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. 
-						</div>
+						<div class="text-about-bold">At Robo-Dynamics, we envision ourselves as more than just an educational institution; we aspire to become a beacon of inspiration and enlightenment for young minds aged 7 to 15. Our overarching goal is to cultivate a generation of future-ready innovators, equipped not only with the requisite technical skills but also imbued with the profound knowledge and unwavering confidence necessary to navigate and excel in an ever-evolving, technology-driven world.</div>
 					</div>
 				</div>
 			</div>
@@ -77,15 +76,10 @@
 					<div class="copy mt-5">
 						<div class="text-label font_sarpanch fs-2 text-start mt-3">
 							Our Mission</div>
-						<div class="text-about-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. Integer vitae justo eget magna fermentum iaculis eu non diam. Tristique senectus et netus et malesuada fames ac turpis egestas. Consequat semper viverra nam libero justo laoreet sit amet. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. 
+						<div class="text-about-bold">
+At Robo-Dynamics, our mission is clear: to ignite the spark of innovation and problem-solving in the hearts and minds of the next generation. We firmly believe that every child is a reservoir of untapped potential, waiting to be unlocked and unleashed upon the world. Through our diverse array of programs encompassing coding, robotics, drones, 3D printing, and beyond, we strive to provide a platform where these unique talents can flourish.
 						</div>
-						<!-- <div class="cta d-flex justify-content-center gap-2">
-							<a href=""
-								class="text-white text-decoration-none px-3 py-2 rounded-4"
-								style="background: #FFB703">Get Started</a> <a href=""
-								class="text-white text-decoration-none px-3 py-2 rounded-4"
-								style="background: #FFB703">Summer Camp!</a>
-						</div> -->
+						
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -96,87 +90,106 @@
 			</div>
 		</div>
 	</section>
-	<section class="section-team">
-		<div class="container">
-			<!-- Start Header Section -->
-			<div class="row justify-content-center text-center">
-				<div class="col-md-8 col-lg-6">
-					<div class="header">
-						<h2
-							class="text-white text-center mb-5 lsp font_sarpanch text-uppercase">Our Team</h2>
-					</div>
-				</div>
-			</div>
-			<!-- / End Header Section -->
-			<div class="row">
-				<!-- Start Single Person -->
-				<div class="col-sm-6 col-lg-4 col-xl-3">
-					<div class="single-person">
-						<div class="person-image">
-							<img src="https://i.ibb.co/G2CBWvb/person1.jpg" alt="">
-							<span class="icon">
-								<i class="fab fa-html5"></i>
-							</span>
-						</div>
-						<div class="person-info">
-							<h3 class="full-name text-white">John Doe</h3>
-							<span class="speciality">Web Developer</span>
-						</div>
-					</div>
-				</div>
-				<!-- / End Single Person -->
-				<!-- Start Single Person -->
-				<div class="col-sm-6 col-lg-4 col-xl-3">
-					<div class="single-person">
-						<div class="person-image">
-							<img src="https://i.ibb.co/nbpNr4r/person2.jpg" alt="">
-							<span class="icon">
-								<i class="fab fa-wordpress-simple"></i>
-							</span>
-						</div>
-						<div class="person-info">
-							<h3 class="full-name text-white">Robert Smith</h3>
-							<span class="speciality">WordPress Developer</span>
-						</div>
-					</div>
-				</div>
-				<!-- / End Single Person -->
-				<!-- Start Single Person -->
-				<div class="col-sm-6 col-lg-4 col-xl-3">
-					<div class="single-person">
-						<div class="person-image">
-							<img src="https://i.ibb.co/25zdRMr/person3.jpg" alt="">
-							<span class="icon">
-								<i class="fab fa-angular"></i>
-							</span>
-						</div>
-						<div class="person-info">
-							<h3 class="full-name text-white">John Doe</h3>
-							<span class="speciality">Angular Developer</span>
-						</div>
-					</div>
-				</div>
-				<!-- / End Single Person -->
-				<!-- Start Single Person -->
-				<div class="col-sm-6 col-lg-4 col-xl-3">
-					<div class="single-person">
-						<div class="person-image">
-							<img src="https://i.ibb.co/w0ynr2Q/person4.jpg" alt="">
-							<span class="icon">
-								<i class="fab fa-js"></i>
-							</span>
-						</div>
-						<div class="person-info">
-							<h3 class="full-name text-white">John Smith</h3>
-							<span class="speciality">Javascript Developer</span>
-						</div>
-					</div>
-				</div>
-				<!-- / End Single Person -->
-			</div>
-		</div>
-	</section>
+	<section class="our-team mb-5">
+		 <div class="title">Our Team</div>
 
+        <div class="card_container">
+
+            <div class="card">
+                <div class="squareBox"></div>
+                <div class="round_box"></div>
+                <div class="img_box">
+                    <img src="${pageContext.request.contextPath}/resources/images/default.jpg" alt="">
+                </div>
+
+                <div class="user_content">
+                    <h5 class="name">Achalla Ramakrishna</h5>
+                    <p class="post">Founder</p>
+
+                    <p class="about"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="squareBox"></div>
+                <div class="round_box"></div>
+                <div class="img_box">
+                    <img src="${pageContext.request.contextPath}/resources/images/default.jpg" alt="">
+                </div>
+
+                <div class="user_content">
+                    <h5 class="name">Prahaas Bhuvanagiri</h5>
+                    <p class="post">Front End Developer</p>
+
+                    <p class="about"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="squareBox"></div>
+                <div class="round_box"></div>
+                <div class="img_box">
+                    <img src="${pageContext.request.contextPath}/resources/images/default.jpg" alt="">
+                </div>
+
+                <div class="user_content">
+                    <h5 class="name">Anurag</h5>
+                    <p class="post">Marketing</p>
+
+                    <p class="about"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="squareBox"></div>
+                <div class="round_box"></div>
+                <div class="img_box">
+                    <img src="${pageContext.request.contextPath}/resources/images/default.jpg" alt="">
+                </div>
+
+                <div class="user_content">
+                    <h5 class="name">Manoj</h5>
+                    <p class="post">Mentor (Young Innovators)</p>
+
+                  
+                    <p class="about"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="squareBox"></div>
+                <div class="round_box"></div>
+                <div class="img_box">
+                    <img src="${pageContext.request.contextPath}/resources/images/default.jpg" alt="">
+                </div>
+
+                <div class="user_content">
+                    <h5 class="name">Tanishq</h5>
+                    <p class="post">Mentor</p>
+
+                   
+                    <p class="about"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="squareBox"></div>
+                <div class="round_box"></div>
+                <div class="img_box">
+                    <img src="${pageContext.request.contextPath}/resources/images/default.jpg" alt="">
+                </div>
+
+                <div class="user_content">
+                    <h5 class="name">Anirudh</h5>
+                    <p class="post">Mentor</p>
+	
+                    <p class="about"></p>
+                </div>
+            </div>
+
+        </div>
+	</section>
+	
 	
 <%@ include file="/WEB-INF/views/footer.jsp" %>
 
