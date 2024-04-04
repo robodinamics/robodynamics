@@ -35,4 +35,10 @@ public class RDStaticController {
 		return "membership";
 	}
 	
+	@GetMapping("/summercamp")
+	public String summercamp(Model m, HttpSession session) {
+		return "summercamp";
+	}
+	
+	
 }

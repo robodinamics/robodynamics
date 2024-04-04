@@ -44,7 +44,7 @@
 							<!-- <a href=""
 								class="text-white text-decoration-none px-3 py-2 rounded-4"
 								style="background: #FFB703">Get Started</a> -->
-								 <a href=""
+								 <a href="${pageContext.request.contextPath}/summercamp"
 								class="text-white text-decoration-none px-3 py-2 rounded-2 btn btn-primary">Summer Camp!</a>
 						</div>
 					</div>

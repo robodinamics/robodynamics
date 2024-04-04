@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    background: #0B0C24 !important;
+    overflow-x: hidden !important;
+}
+
+.font_sarpanch {
+    font-family: "Sarpanch", sans-serif;
+}
+
+
+.lsp {
+    letter-spacing: 20px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	overflow: hidden !important;
+}
+section .hero {
+    margin: 5rem 0;
+}

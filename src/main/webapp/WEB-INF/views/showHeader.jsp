@@ -20,7 +20,7 @@
         <!-- Logo -->
         <!-- <a class="navbar-brand fs-4" href="#">RoboDynamics</a> -->
         <a class="navbar-brand" href="#">
-          <img src="${pageContext.request.contextPath}/resources/images/logo.png" alt="" width="150" height="50">
+          <img src="${pageContext.request.contextPath}/resources/images/rdlogotransparent.png" alt="" width="150" height="50">
         </a>    
         <!-- Toggle Button -->
         <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
