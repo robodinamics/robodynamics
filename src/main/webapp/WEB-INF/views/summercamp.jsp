@@ -173,7 +173,7 @@ The club focuses on enhancing coding skills, algorithmic thinking, and software 
             </div>
             <div class="learn">
               <h5>Age</h5>
-              <p>7-8 Years</p>
+              <p>11-20 Years</p>
             </div>
             </div>
             <div class="col-md-6">
